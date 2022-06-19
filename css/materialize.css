@@ -6136,7 +6136,7 @@ input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-bottom: 1px solid #6566AB;
   border-radius: 0;
   outline: none;
   height: 3rem;
@@ -6225,7 +6225,7 @@ input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #26a69a;
+  border-bottom: 1px solid #6566AB;
   -webkit-box-shadow: 0 1px 0 0 #26a69a;
           box-shadow: 0 1px 0 0 #26a69a;
 }
@@ -6320,7 +6320,7 @@ input.valid[type=search]:not(.browser-default),
 input.valid[type=search]:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
-  border-bottom: 1px solid #4CAF50;
+  border-bottom: 1px solid #6566AB;
   -webkit-box-shadow: 0 1px 0 0 #4CAF50;
           box-shadow: 0 1px 0 0 #4CAF50;
 }
@@ -6351,7 +6351,7 @@ input.invalid[type=search]:not(.browser-default):focus,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown,
 .select-wrapper.invalid > input.select-dropdown:focus {
-  border-bottom: 1px solid #F44336;
+  border-bottom: 1px solid #6566AB;
   -webkit-box-shadow: 0 1px 0 0 #F44336;
           box-shadow: 0 1px 0 0 #F44336;
 }
@@ -6585,7 +6585,7 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
 }
 
 .input-field .prefix.active {
-  color: #26a69a;
+  color: #6566AB;
 }
 
 .input-field .prefix ~ input,
@@ -6782,12 +6782,12 @@ textarea.materialize-textarea {
 [type="radio"]:checked + span:after,
 [type="radio"].with-gap:checked + span:before,
 [type="radio"].with-gap:checked + span:after {
-  border: 2px solid #26a69a;
+  border: 2px solid #6566AB;
 }
 
 [type="radio"]:checked + span:after,
 [type="radio"].with-gap:checked + span:after {
-  background-color: #26a69a;
+  background-color: #6566AB;
 }
 
 [type="radio"]:checked + span:after {
@@ -6909,8 +6909,8 @@ textarea.materialize-textarea {
   height: 22px;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
-  border-right: 2px solid #26a69a;
-  border-bottom: 2px solid #26a69a;
+  border-right: 2px solid #6566AB;
+  border-bottom: 2px solid #6566AB;;
   -webkit-transform: rotate(40deg);
           transform: rotate(40deg);
   -webkit-backface-visibility: hidden;
@@ -6965,7 +6965,7 @@ textarea.materialize-textarea {
 [type="checkbox"].filled-in:not(:checked) + span:not(.lever):before {
   width: 0;
   height: 0;
-  border: 3px solid transparent;
+  border: none;
   left: 6px;
   top: 10px;
   -webkit-transform: rotateZ(37deg);
@@ -6977,8 +6977,8 @@ textarea.materialize-textarea {
 [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
   height: 20px;
   width: 20px;
-  background-color: transparent;
-  border: 2px solid #5a5a5a;
+  background-color: #e4e4e4;
+  border: none;
   top: 0px;
   z-index: 0;
 }
@@ -7002,8 +7002,8 @@ textarea.materialize-textarea {
   top: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #26a69a;
-  background-color: #26a69a;
+  border: 2px solid #6566AB;
+  background-color: #6566AB;
   z-index: 0;
 }
 
@@ -7015,8 +7015,8 @@ textarea.materialize-textarea {
 
 [type="checkbox"].filled-in.tabbed:checked:focus + span:not(.lever):after {
   border-radius: 2px;
-  background-color: #26a69a;
-  border-color: #26a69a;
+  background-color: #6566AB;
+  border-color: #6566AB;
 }
 
 [type="checkbox"].filled-in:disabled:not(:checked) + span:not(.lever):before {
@@ -7068,7 +7068,7 @@ textarea.materialize-textarea {
 }
 
 .switch label input[type=checkbox]:checked + .lever:after {
-  background-color: #26a69a;
+  background-color: #6566AB;
 }
 
 .switch label .lever {
@@ -7190,7 +7190,7 @@ select {
 }
 
 .select-wrapper input.select-dropdown:focus {
-  border-bottom: 1px solid #26a69a;
+  border-bottom: 1px solid #6566AB;
 }
 
 .select-wrapper .caret {
@@ -7363,7 +7363,7 @@ input[type=range] + .thumb {
   height: 0;
   width: 0;
   border-radius: 50%;
-  background-color: #26a69a;
+  background-color: #6566AB;
   margin-left: 7px;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
@@ -7375,7 +7375,7 @@ input[type=range] + .thumb .value {
   display: block;
   width: 30px;
   text-align: center;
-  color: #26a69a;
+  color: #6566AB;
   font-size: 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -7407,7 +7407,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 14px;
   width: 14px;
   border-radius: 50%;
-  background: #26a69a;
+  background: #6566AB;
   -webkit-transition: -webkit-box-shadow .3s;
   transition: -webkit-box-shadow .3s;
   transition: box-shadow .3s;
@@ -7445,7 +7445,7 @@ input[type=range]::-moz-range-thumb {
   height: 14px;
   width: 14px;
   border-radius: 50%;
-  background: #26a69a;
+  background: #6566AB;
   -webkit-transition: -webkit-box-shadow .3s;
   transition: -webkit-box-shadow .3s;
   transition: box-shadow .3s;
@@ -7484,7 +7484,7 @@ input[type=range]::-ms-thumb {
   height: 14px;
   width: 14px;
   border-radius: 50%;
-  background: #26a69a;
+  background: #6566AB;
   -webkit-transition: -webkit-box-shadow .3s;
   transition: -webkit-box-shadow .3s;
   transition: box-shadow .3s;

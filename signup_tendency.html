@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephonne=no">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Nanumsqure font -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <section class="sign-up sign-tendency">
+
+        <div class="row">
+            <div class="col">
+                <a href="signup_birth.html"><i class="material-icons">arrow_back</i></a>
+            </div>
+            <div class="col sign-header">회원가입</div>
+        </div>
+
+        <div class="container">
+            
+            <p class="tendency-p">
+                당신의 성향을 기입해주시고(탑 or 바텀), 
+                세부 성향을 선택해 주세요. (스위치 성향의 경우는 
+                더 가까운 쪽으로 선택을 하시고 세부 성향 선택에
+                자세히 기입해주세요.)
+            </p>
+
+            <div class="tendency">
+                <h2>성향<span>*</span></h2>
+                <p >가입 후 성향 변경은 문의하기를 통해 가능하니 
+                    <br>신중하게 선택해주세요.
+                </p>
+                <div class="col">
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>탑</span>
+                    </label>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>바텀</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="top-tendency">
+                <h2>세부 성향 선택<span>*</span><span class="required">(최소 1개 이상, 중복 가능)</span></h2>
+                <div class="collection">탑</div>
+
+                <div class="tendency-checkbox">
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>마스터</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>미스트레스</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" >
+                                <span>헌터</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>브랫 테이머</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>오너</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>대디</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>마미</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>사디스트</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>스팽커</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>디그레이더</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>리거</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>도미넌트</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s5">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>탑 쪽에 가까운 스위치</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection">바텀</div>
+                <div class="tendency-checkbox">
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>슬레이브</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>프레이</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" >
+                                <span>브랫</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>펫</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>리틀</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>마조히스트</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>스팽키</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>디그레이디</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>로프 버니</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>서브미시브</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>서번트</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s5">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>바텀 쪽에 가까운 스위치</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="collection">
+                <a href="signup_nameID.html" class="collection-item">다음</a>
+            </div>
+
+            <div class="progress-wrapper">
+                <p class="right-align">3/8</p>
+                <div class="progress">
+                    <div class="determinate" style="width: 37.5%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../js/materialize.js"></script>
+</body>
+</html>
