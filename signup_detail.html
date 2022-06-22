@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,8 @@
 
     <title>Document</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,11 +19,13 @@
     <!-- Nanumsqure font -->
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../js/main.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous">
+        </script>
 </head>
+
 <body>
-    <section class="sign-up sign-tendency">
+    <section class="sign-up sign-detail">
 
         <div class="row">
             <div class="col">
@@ -31,94 +34,154 @@
             <div class="col sign-header">회원가입</div>
         </div>
 
+
         <div class="container">
-            
-            <p class="tendency-p">
-                당신의 성향을 기입해주시고(탑 or 바텀), 
-                세부 성향을 선택해 주세요. (스위치 성향의 경우는 
-                더 가까운 쪽으로 선택을 하시고 세부 성향 선택에
-                자세히 기입해주세요.)
+
+            <p class="signup-p">
+                지역 및 세부사항을 입력해주세요.
             </p>
 
-            <div class="tendency">
-                <h2>성향<span>*</span></h2>
-                <p >가입 후 성향 변경은 문의하기를 통해 가능하니 
-                    <br>신중하게 선택해주세요.
+            <div class="signup-selectbox">
+                <h2>지역<span>*</span></h2>
+                <div class="input-field col s12">
+                    <select>
+                        <option value="" disabled selected>지역선택</option>
+                        <option value="1">서울</option>
+                        <option value="2">경기</option>
+                        <option value="3">부산</option>
+                        <option value="4">광주</option>
+                        <option value="5">대구</option>
+                        <option value="6">인천</option>
+                        <option value="7">대전</option>
+                        <option value="8">울산</option>
+                        <option value="9">강원</option>
+                        <option value="10">경남</option>
+                        <option value="11">전남</option>
+                        <option value="12">전북</option>
+                        <option value="13">충남</option>
+                        <option value="14">충북</option>
+                        <option value="15">제주</option>
+                        <option value="16">해외</option>
+                    </select>
+                    <label></label>
+                </div>
+            </div>
+
+
+            <h2 class="color-h2">세부 사항</h2>
+            <!-- 자기소개 -->
+            <div class="signup-input">
+                <h2>자기소개</h2>
+                <p class="signup-p">
+                    (SNS 아이디 등 연락처 입력 시 서비스 이용이 <br>
+                    제한됩니다, 100자 이내)
                 </p>
-                <div class="col">
-                    <label>
-                        <input class="with-gap" name="group1" type="radio"  />
-                        <span>탑</span>
-                    </label>
-                    <label>
-                        <input class="with-gap" name="group1" type="radio"  />
-                        <span>바텀</span>
-                    </label>
+                <div class="input-field col s6">
+                    <input placeholder="자기 소개를 입력해주세요." id="first_name" type="text" class="validate">
+                    <label for="first_name"></label>
                 </div>
             </div>
 
-            <div class="top-tendency">
-                <h2>세부 성향 선택<span>*</span><span class="required">(최소 1개 이상, 중복 가능)</span></h2>
-                <div class="collection">탑</div>
+            <!-- 키 -->
+            <div class="signup-input">
+                <h2>키<span>*</span></h2>
+                <div class="input-field col s6">
+                    <input placeholder="키를 입력해주세요." id="first_name" type="text" class="validate">
+                    <label for="first_name"></label>
+                </div>
+            </div>
 
-                <div class="tendency-checkbox">
-                    <div class="row">
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in">
-                                <span>마스터</span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in">
-                                <span>미스트레스</span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in" >
-                                <span>헌터</span>
-                            </label>
-                        </div>
+            <!-- 체형 -->
+            <div class="signup-selectbox">
+                <h2>체형<span>*</span></h2>
+                <div class="input-field col s12">
+                    <select>
+                        <option value="" disabled selected>체형선택</option>
+                        <option value="1">슬랜더</option>
+                        <option value="2">슬림</option>
+                        <option value="3">근육</option>
+                        <option value="3">보통</option>
+                        <option value="3">근육질</option>
+                        <option value="3">통통</option>
+                        <option value="3">BBW</option>
+                    </select>
+                    <label></label>
+                </div>
+            </div>
+
+            <!-- 선호하는 관계 -->
+            <div class="signup-checkbox like-select">
+                <h2>선호하는 관계<span>*</span><span class="required">(최소 1개 이상, 중복 가능)</span></h2>
+                <div class="row">
+                    <div class="col s6">
+                        <label>
+                            <input type="checkbox" class="filled-in">
+                            <span>사람에 따라 달라요</span>
+                        </label>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in"/>
-                                <span>브랫 테이머</span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in"/>
-                                <span>오너</span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in"/>
-                                <span>대디</span>
-                            </label>
-                        </div>
+                    <div class="col s6">
+                        <label>
+                            <input type="checkbox" class="filled-in">
+                            <span>친구</span>
+                        </label>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col s6">
+                        <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span>디엣</span>
+                        </label>
+                    </div>
+                    <div class="col s6">
+                        <label>
+                            <input type="checkbox" class="filled-in" />
+                            <span>연디</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 직업 -->
+            <div class="signup-input">
+                <h2>직업</h2>
+                <div class="input-field col s6">
+                    <input placeholder="직업을 입력해주세요." id="first_name" type="text" class="validate">
+                    <label for="first_name"></label>
+                </div>
+            </div>
+
+            <!-- 학력 -->
+            <div class="signup-input">
+                <h2>학력</h2>
+                <div class="input-field col s6">
+                    <input placeholder="학력을 입력해주세요." id="first_name" type="text" class="validate">
+                    <label for="first_name"></label>
+                </div>
+            </div>
+
+            <!-- 성격 -->
+            <div class="signup-checkbox">
+                <h2>성격<span class="required">(최소 1개 이상, 중복 가능)</span></h2>
+                <div class="slect-checkbox">
+
                     <div class="row">
                         <div class="col">
                             <label>
                                 <input type="checkbox" class="filled-in">
-                                <span>마미</span>
+                                <span>애교있는</span>
                             </label>
                         </div>
                         <div class="col">
                             <label>
                                 <input type="checkbox" class="filled-in" />
-                                <span>사디스트</span>
+                                <span>주도적인</span>
                             </label>
                         </div>
                         <div class="col">
                             <label>
-                                <input type="checkbox" class="filled-in"/>
-                                <span>스팽커</span>
+                                <input type="checkbox" class="filled-in" />
+                                <span>털털한</span>
                             </label>
                         </div>
                     </div>
@@ -126,19 +189,397 @@
                         <div class="col">
                             <label>
                                 <input type="checkbox" class="filled-in">
-                                <span>디그레이더</span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in"/>
-                                <span>리거</span>
+                                <span>친절한</span>
                             </label>
                         </div>
                         <div class="col">
                             <label>
                                 <input type="checkbox" class="filled-in" />
-                                <span>도미넌트</span>
+                                <span>활발한</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>낙천적인</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>엉뚱한</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>재밌는</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>단순한</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>도도한</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>감성적인</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>조용한</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>도도한</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>감성적인</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>조용한</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>수줍음 많은</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>허세없는</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>성실한</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>쿨한</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>소심한</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>즉흥적인</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>꼼꼼한</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>과묵ㅁ한</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 흡연 -->
+            <div class="signup-selectbox">
+                <h2>흡연<span>*</span></h2>
+                <div class="input-field col s12">
+                    <select>
+                        <option value="" disabled selected>흡연선택</option>
+                        <option value="1">피우지 않음</option>
+                        <option value="2">때때로 피움</option>
+                        <option value="3">자주 피움</option>
+                    </select>
+                    <label></label>
+                </div>
+            </div>
+
+            <!-- 음주 -->
+            <div class="signup-selectbox">
+                <h2>음주<span>*</span></h2>
+                <div class="input-field col s12">
+                    <select>
+                        <option value="" disabled selected>음주선택</option>
+                        <option value="1">마시지 않음</option>
+                        <option value="2">때때로 마심</option>
+                        <option value="2">자주 마심</option>
+                    </select>
+                    <label></label>
+                </div>
+            </div>
+
+            <!-- 종교 -->
+            <div class="signup-input">
+                <h2>종교</h2>
+                <div class="input-field col s6">
+                    <input placeholder="종교를 입력해주세요." id="first_name" type="text" class="validate">
+                    <label for="first_name"></label>
+                </div>
+            </div>
+
+            <!-- 취미 -->
+            <div class="signup-checkbox">
+                <h2>취미<span>*</span><span class="required">(최소 3개 이상, 중복 가능)</span></h2>
+                <div class="slect-checkbox">
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>영화</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>넷플릭스</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>드라마</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>TV예능</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>카페</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>노래방</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>술</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>수다</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>쇼핑</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>독서</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>맛집탐방</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>여행</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>독서</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>맛집탐방</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>여행</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>필라테스</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>여가</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>골프</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>산책</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>캠핑</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>볼링</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>당구</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>공부</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>외국어공부</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>게임</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>웹툰</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>사진찍기</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>제테크</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>봉사활동</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>드라이브</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in">
+                                <span>패션</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>미용</span>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span>애니</span>
                             </label>
                         </div>
                     </div>
@@ -146,114 +587,91 @@
                         <div class="col s5">
                             <label>
                                 <input type="checkbox" class="filled-in" />
-                                <span>탑 쪽에 가까운 스위치</span>
+                                <span>놀이동산</span>
                             </label>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="collection">바텀</div>
-                <div class="tendency-checkbox">
+            <!-- 정치관 -->
+            <div class="signup-checkbox">
+                <h2>정치관<span>*</span><span class="required">(최소 3개 이상, 중복 가능)</span></h2>
+                <div class="select-checkbox">
                     <div class="row">
-                        <div class="col">
+                        <div class="col s3">
                             <label>
                                 <input type="checkbox" class="filled-in">
-                                <span>슬레이브</span>
+                                <span>진보</span>
                             </label>
                         </div>
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in">
-                                <span>프레이</span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in" >
-                                <span>브랫</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in"/>
-                                <span>펫</span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in"/>
-                                <span>리틀</span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in"/>
-                                <span>마조히스트</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in">
-                                <span>스팽키</span>
-                            </label>
-                        </div>
-                        <div class="col">
+                        <div class="col s3">
                             <label>
                                 <input type="checkbox" class="filled-in" />
-                                <span>디그레이디</span>
+                                <span>보수</span>
                             </label>
                         </div>
-                        <div class="col">
+                        <div class="col s3">
                             <label>
-                                <input type="checkbox" class="filled-in"/>
-                                <span>로프 버니</span>
+                                <input type="checkbox" class="filled-in" />
+                                <span>중도</span>
                             </label>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in">
-                                <span>서브미시브</span>
-                            </label>
-                        </div>
-                        <div class="col">
-                            <label>
-                                <input type="checkbox" class="filled-in"/>
-                                <span>서번트</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="row">
                         <div class="col s5">
                             <label>
                                 <input type="checkbox" class="filled-in" />
-                                <span>바텀 쪽에 가까운 스위치</span>
+                                <span>페미니즘</span>
                             </label>
                         </div>
                     </div>
                 </div>
-
             </div>
-            
+
+            <!-- 플러팅 -->
+            <div class="signup-input">
+                <div class="flex">
+                    <h2>플러팅<span>*</span></h2>
+                    <!-- <div class="switch">
+                        <label>
+                            Off
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            On
+                        </label>
+                    </div> -->
+                    <div class="toggle">
+                    <input type="checkbox" class="toggle" id="toggle" />
+                        <label for="toggle">
+                            <span class="on">Yes</span>
+                            <span class="off">No</span>
+                        </label>
+                    </div>
+                    
+                </div>
+
+
+                <p class="tendency-p">
+                    (Off로 설정 시 스와이프에 더 이상 등장하지 않고,
+                    <br>내 프로필을 열람하는 유저에게 플러팅 Off로 표시됩니다.)
+                </p>
+            </div>
+
             <div class="collection">
-                <a href="signup_nameID.html" class="collection-item">다음</a>
+                <a href="signup_sex.html" class="collection-item">다음</a>
             </div>
 
             <div class="progress-wrapper">
-                <p class="right-align">3/8</p>
+                <p class="right-align">5/8</p>
                 <div class="progress">
-                    <div class="determinate" style="width: 37.5%"></div>
+                    <div class="determinate" style="width: 67.5%"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script src="../js/materialize.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
