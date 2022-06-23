@@ -6,37 +6,47 @@ if (window.navigator.userAgent.indexOf("Edge") !== -1 || navigator.appVersion.in
 
 // selectbox
 
-  $(document).ready(function(){
-    $('select').formSelect();
-  });
-        
+$(document).ready(function(){
+$('select').formSelect();
+});
+    
 
 
-  var agreeBtn = document.getElementsByClassName("agree-btn");
+//tab
 
-  function handleClick(event) {
-    console.log(event.target);
-    // console.log(this);
-    // 콘솔창을 보면 둘다 동일한 값이 나온다
+var instance = M.Tabs.init(el, options);
 
-    console.log(event.target.classList);
+// Or with jQuery
 
-    if (event.target.classList[1] === "clicked") {
-      event.target.classList.remove("clicked");
-    } else {
-      for (var i = 0; i < agreeBtn.length; i++) {
-        agreeBtn[i].classList.remove("clicked");
-      }
+$(document).ready(function(){
+    $('.tabs').tabs();
+});
 
-      event.target.classList.add("clicked");
-    }
-  }
+var agreeBtn = document.getElementsByClassName("agree-btn");
 
-  function init() {
+function handleClick(event) {
+console.log(event.target);
+// console.log(this);
+// 콘솔창을 보면 둘다 동일한 값이 나온다
+
+console.log(event.target.classList);
+
+if (event.target.classList[1] === "clicked") {
+    event.target.classList.remove("clicked");
+} else {
     for (var i = 0; i < agreeBtn.length; i++) {
-        agreeBtn[i].addEventListener("click", handleClick);
+    agreeBtn[i].classList.remove("clicked");
     }
-  }
 
-  init();
+    event.target.classList.add("clicked");
+}
+}
+
+function init() {
+for (var i = 0; i < agreeBtn.length; i++) {
+    agreeBtn[i].addEventListener("click", handleClick);
+}
+}
+
+init();
 
