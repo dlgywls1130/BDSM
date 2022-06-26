@@ -4,6 +4,11 @@ if (window.navigator.userAgent.indexOf("Edge") !== -1 || navigator.appVersion.in
     document.documentElement.className += ' modern-browser';
 }
 
+
+
+//modal
+
+
 // selectbox
 
 $(document).ready(function(){
@@ -13,10 +18,6 @@ $('select').formSelect();
 
 
 //tab
-
-var instance = M.Tabs.init(el, options);
-
-// Or with jQuery
 
 $(document).ready(function(){
     $('.tabs').tabs();

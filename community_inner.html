@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephonne=no">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Nanumsqure font -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</head>
+<body>
+    <section class="inner head-fix">
+        <div class="row">
+            <a href="community.html"><i class="material-icons">arrow_back</i></a>
+            <div class="col sign-header">카페테리아(커뮤니티)</div>
+            <a class="complete" href="javascript:void(0)">완료</a>
+        </div>
+
+        
+
+        <div class="container community-inner">
+            
+            <div class="select-wrapper select_wrap">
+                <div class="input-field col s12">
+                    <select>
+                        <option value="" selected>게시판 선택</option>
+                    </select>
+                    <label></label>
+                </div>
+            </div>
+
+            <div class="signup-input">
+                <h2>제목 <span></span></h2>
+                <div class="input-field col s6">
+                    <input data-length="255" placeholder="제목을 입력해 주세요." id="title" type="text" class="validate">
+                    <label for="title"></label>
+                </div>
+            </div>
+            <div class="signup-input">
+                <h2>내용</h2>
+                <textarea data-length="4000" placeholder="타인을 비방하거나, 욕설 혹은 개인을 특정하여 언급하는 행위는 삼가해 주세요. 기준을 위반한 게시물을 작성할 경우 제재를 받을 수 있습니다."></textarea>
+            </div>
+
+            <div class="collection photo-click">
+                <img src="./icons/icon_photo.png">
+            </div>
+
+        </div>
+
+        <div class="bottom_bgc"></div>
+
+        <div class="bottom_navbar">
+            <div class="bottom_navbar-bg">
+                <img src="./imgs/navbar1.png">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="670" height="173" viewBox="0 0 670 173">
+                    <defs>
+                      <filter id="합치기_1" x="0" y="0" width="670" height="173" filterUnits="userSpaceOnUse">
+                        <feOffset dy="-10" input="SourceAlpha"/>
+                        <feGaussianBlur stdDeviation="5" result="blur"/>
+                        <feFlood flood-opacity="0.051"/>
+                        <feComposite operator="in" in2="blur"/>
+                        <feComposite in="SourceGraphic"/>
+                      </filter>
+                    </defs>
+                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#합치기_1)">
+                      <path id="합치기_1-2" data-name="합치기 1" d="M415,143H10A10,10,0,0,1,0,133V0H183a100.007,100.007,0,0,1,89.825,56h94.351A100.007,100.007,0,0,1,457,0H640V133a10,10,0,0,1-10,10Z" transform="translate(15 25)" fill="#fff"/>
+                    </g>
+                  </svg> -->
+            </div>                  
+            <div class="item-contain flex">
+                <a class="item" href="javascript:void(0)">
+                    <img src="./icons/dock_icon_home.png">
+                </a>
+                <a class="item padding-right" href="javascript:void(0)">
+                    <img src="./icons/dock_icon_chat.png">
+                </a>
+                <a class="item padding-left" href="javascript:void(0)">
+                    <img src="./icons/dock_icon_swipe.png">
+                </a>
+                <a class="item" href="javascript:void(0)">
+                    <img src="./icons/dock_icon_profile.png">
+                </a>
+            </div>
+            <a class="middle-btn btn-floating">
+                <img src="./icons/dock_icon_cafe.png">
+            </a>
+        </div>
+    </section>
+
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+
+        <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+
+        </script>
+</body>
+</html>
