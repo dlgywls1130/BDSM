@@ -26,9 +26,7 @@
 <body>
     <section class="community head-fix">
         <div class="row">
-            <div class="col">
-                <a href="signup_birth.html"><i class="material-icons">arrow_back</i></a>
-            </div>
+            <a href="javascript:void(0)"><i class="material-icons">arrow_back</i></a>
             <div class="col sign-header">카페테리아(커뮤니티)</div>
         </div>
 
@@ -53,19 +51,25 @@
                 <div class="select-wrapper select_wrap flex">
                     <div class="input-field col s12">
                         <select>
-                            <option value="" selected>전체성향</option>
+                            <option value="all" selected>전체성향</option>
+                            <option value="top">탑</option>
+                            <option value="bottom">바텀</option>
                         </select>
                         <label></label>
                     </div>
                     <div class="input-field col s12">
                         <select>
-                            <option>최신글</option>
+                            <option value="last">최신글</option>
+                            <option value="read">조회순</option>
+                            <option value="good">추천순</option>
                         </select>
                         <label></label>
                     </div>
                     <div class="input-field col s12">
                         <select>
-                            <option>전체성별</option>
+                            <option value="0">전체성별</option>
+                            <option value="man">남성</option>
+                            <option value="femal">여성</option>
                         </select>
                         <label></label>
                     </div>
@@ -410,7 +414,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="community_inner.html" class="btn-floating waves-effect waves-light write-btn">
+                <a href="community_photo_writer.html" class="btn-floating waves-effect waves-light write-btn">
                     <img src="./icons/icon_write.png">
                 </a>
             </div>
@@ -526,7 +530,7 @@
 
 
 
-                <a class="btn-floating waves-effect waves-light write-btn">
+                <a href="post_return.html" class="btn-floating waves-effect waves-light write-btn">
                     <img src="./icons/icon_write.png">
                 </a>
             </div>

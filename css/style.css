@@ -45,10 +45,12 @@ p{
 a{
     color: #000 !important;
     cursor: pointer;
+    display:block;
 }
 
 a:hover{
     color: var(--color-main-bg) !important;
+    font-weight:800;
 }
 
 
@@ -94,7 +96,6 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:50px!important;
 }
 
 .collection a.collection-item{
@@ -103,6 +104,7 @@ p{
     font-weight: 800;
     line-height: 1
 }
+
 
 h2{
     font-size:15px!important;
@@ -120,6 +122,7 @@ hr{
     max-width:280px!important;
     margin:0 auto;
     width: 100%!important;
+    padding-bottom: 90px;
 }
 
 
@@ -128,7 +131,7 @@ hr{
     font-size: 18px;
     color: var(--font-dark-gray);
     margin: 0;
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -201,6 +204,10 @@ hr{
     background-color:var(--color-main-bg)!important;
 }
 
+.head-fix .row a{
+    margin-left: 1rem;
+}
+
 /* checkbox */
 
 [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after{
@@ -251,7 +258,7 @@ hr{
 
 .input-field>label:not(.label-icon).active{
     -webkit-transform: translateY(-14px) scale(1)!important;
-    transform: translateY(-14px) scale(1)!important;
+    transform: translateY(-25px) scale(1)!important;
 }
 
 .input-field>label{
@@ -334,7 +341,7 @@ textarea.materialize-textarea.valid:focus,
 
 textarea{
     width:100%;
-    height:100px!important;
+    height:10rem!important;
     border-radius: 10px;
     border: solid 1px #e4e4e4;
     padding: 1rem;
@@ -350,6 +357,12 @@ textarea{
     background-color: var(--color-main-bg);
 }
 
+.login .logo{
+    position: relative;
+    transform: none;
+    left:0;
+}
+
 
 .login .logo img{
     width: 95px;
@@ -360,10 +373,11 @@ textarea{
 
 
 
+
 .collection .collection-item{
     border-radius: 10px;
     margin-bottom: 10px;
-    width: 280px;
+    width: 100%;
     height: 50px;
     color:#fff;
     text-align: center;
@@ -464,14 +478,15 @@ textarea{
 .agree-btn input[type="checkbox"]:checked + label{
 background-color: var(--color-main-bg);
 border: 1px solid var(--color-main-bg) !important;
+color:#ffdfde;
 }
 
 .agree-btn input[type="checkbox"]:checked + label span{
-    color: #fff;
+    color: #ffdfde;
 }
 
 .agree-btn input[type="checkbox"]:checked + label svg{
-    fill: #fff;
+    fill: #ffdfde;
 } 
 
 
@@ -516,6 +531,10 @@ font-size:12px;}
 
 .start.collection a.collection-item:not(.active):hover {
     background-color:var(--btn-second-bg)!important;
+}
+
+.start.collection{
+    height: 70px!important;
 }
 
 
@@ -667,6 +686,8 @@ stroke-dashoffset: 48;
     padding-top:119px;
 }
 
+
+
 .input-field.col label{
     left:auto!important;
     font-size: 13px;
@@ -724,7 +745,7 @@ color: var(--color-main-bg)!important;
 }
 
 .collection a.collection-item:not(.active):hover{
-    background-color: var(--color-main-bg);
+    background-color: var(--color-main-bg)!important;
     color:#fff!important;
 }
 
@@ -735,6 +756,7 @@ color: var(--color-main-bg)!important;
 .sign-up .collection{
     border-radius: 10px;
     margin-top:40px;
+    height:50px;
 }
 
 .sign-up .collection .collection-item{
@@ -799,7 +821,7 @@ color: var(--color-main-bg)!important;
 
 
 .sign-detail .collection{
-    height:40px;
+    height:50px;
     margin-top:10.5px;
     background-color:var(--color-card-bg);
     color:var(--color-main-bg);
@@ -960,17 +982,112 @@ left: 100%;
 margin-left: -28px;
 }
 
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked{
+    pointer-events: auto!important;
+}
+
+
+
+.toggle-container {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.toggle-container input {
+opacity: 0;
+width: 100%;
+height: 100%;
+pointer-events: all;
+}
+
+.toggle-slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+height:34px;
+width: 89.5px;
+background-color:  #e6e6e6;
+transition: 0.4s;
+pointer-events: none;
+}
+
+.toggle-slider::before {
+    position: absolute;
+    content: "";
+    height: 34px;
+    width: 34px;
+    left: -4px;
+    bottom: 0px;
+    background-color: var(--color-main-bg);
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.toggle-slider::after {
+    position: absolute;
+    content: "여성";
+    height: 19px;
+    width: 33px;
+    right: 14px;
+    bottom: 5px;
+    transition: 0.2s;
+    color: #fff;
+    pointer-events: none;
+    color:var(--color-main-bg);
+    font-weight:800;
+}
+
+input:checked + .toggle-slider {
+background-color: #e6e6e6;
+}
+
+input:checked + .toggle-slider:before {
+    transform: translateX(62px);
+}
+
+input:checked + .toggle-slider:after {
+    content: "남성";
+    left: 20px;
+    color:var(--color-main-bg);
+    font-weight:800;
+}
+
+.toggle-slider.round {
+border-radius: 34px;
+}
+
+.toggle-slider.round:before {
+border-radius: 50%;
+}
+
+
+
+
+
+
 .upload-wrapper{
 position: relative;
 }
 
 .img-box .col .card{
-    margin: 0 10px 10px 0;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
     width:135px;
     height:125px;
     background-color: #e4e4e4;
     opacity: 0.8;
     border-radius: 10px;
+}
+
+.img-box .col .card:last-child{
+    margin-right: 0;
 }
 
 
@@ -1096,7 +1213,7 @@ display: flex;
     font-size: 15px!important;
     line-height: 1.07;
     color: var(--font-dark-gray);
-    margin: 0 0 10px;
+    margin: 0 0 10px!important;
 }
 
 #profile .collection .bean-wrapper{
@@ -1140,6 +1257,7 @@ display: flex;
 
 .profile_wrap{
     margin:20px 0;
+    padding-bottom: 90px;
 }
 
 .community-img .title{
@@ -1163,6 +1281,7 @@ display: flex;
     height: 66.5px;
     position: fixed;
     bottom:0;
+    z-index: 9;
 }
 
 .item-contain{
@@ -1406,7 +1525,6 @@ justify-content: center!important;
 .hot-post{
     width: 37px;
     height: 18px;
-    padding: 4px 9px 3px;
     border-radius: 10px;
     background-color: #6566ab;
     color:#fff;
@@ -1560,6 +1678,7 @@ justify-content: center!important;
 
 .post-write-top{
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .post-write-top .post-writer{
@@ -1574,6 +1693,37 @@ justify-content: center!important;
     line-height: 1.15;
     font-weight: 400;
     color: var(--color-main-bg);
+}
+
+.post-write-top.delete{
+    align-items: center!important;
+    
+}
+
+.post-write-top.delete .chat-post{
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: var(--font-dark-gray);
+    font-weight: 800;
+}
+
+.post-write-top.recahat{
+    margin-left: 5.5rem;
+}
+
+.post-write-top.recahat .post-img{
+    width:22px;
+    height:22px;
+}
+
+.post-write-top.recahat .post-img .post-writer{
+    font-size: 13px;
+}
+
+.chat-post .post-writer span{
+    margin-top: 0.325rem;
 }
 
 .title-post {
@@ -1631,11 +1781,11 @@ justify-content: center!important;
     align-items: flex-start;
 }
 
-.next-post .post-time {
+.chat-post .post-time {
     margin-top:5px;
 }
 
-.next-post .post-time p:first-child{
+.chat-post .post-time p:first-child{
     margin-right: 15px;
 }
 
@@ -1685,7 +1835,7 @@ font-weight: 600;
 .chat-content{
     width: 100%;
     height: 150px;
-    padding: 20px 0 87px;
+    padding: 20px 0;
     background-color: #6566ab;
     display: flex;
     align-items: center;
@@ -1751,6 +1901,9 @@ font-weight: 600;
     align-items: center;
 }
 
+#edit .sign-detail.sign-up{
+    padding-bottom: 90px;
+}
 
 #return {
     position: relative;
@@ -1789,7 +1942,7 @@ font-weight: 600;
 }
 
 .post-img-squre{
-    width: 135px;
+    width: 100%;
     height: 125px;
     border-radius: 10px;
     background-color: #e4e4e4;
@@ -1819,4 +1972,65 @@ font-weight: 600;
 
 #photo .post-down{
     align-items: flex-start;
+}
+
+.photo-select-wrapp{
+    width: 100%;
+    height: 106px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px #efefef;
+}
+
+.photo-select-wrapp ul{
+    padding-top:2rem;
+    padding-bottom:2rem;
+    padding-right: 2rem;
+    padding-left: 2rem!important;
+}
+
+.photo-select-wrapp li{
+    margin-right: 0.5rem;
+    position: relative;
+}
+
+.photo-select-wrapp li:last-child{
+    margin-right: 0;
+}
+
+.photo-select-wrapp .post-img-squre{
+    width: 67px;
+    height: 67px;
+    border-radius: 15px;
+    background-color: #e4e4e4;
+}
+
+.photo-select-wrapp .btn-floating.halfway-fab{
+    width: 17px!important;
+    height: 17px!important;
+    right: 6px!important;
+    top: 5px!important;
+}
+
+.photo-select-wrapp .btn-floating i{
+    font-size: 1rem;
+}
+
+.return-chat{
+    font-size: 13px;
+    line-height: 1.38;
+    color: #666;
+    margin-top:7px;
+}
+
+.head-fix .sign-header span{
+    font-size:13px;
+    margin-left: 0.325rem;
+}
+
+.queer_hot{
+    width: 93.5px;
+    padding: 0.2rem;
+
 }
