@@ -24,10 +24,10 @@
 
 </head>
 <body>
-    <section class="inner head-fix chat-matching">
+    <section class="inner head-fix chat-matching chatting-color">
         <div class="row flex-between">
             <div class="flex flex-center ">
-                <a href="community.html"><i class="material-icons">arrow_back</i></a>
+                <a href="chat.html"><i class="material-icons">arrow_back</i></a>
                 <div class="chat-your flex flex-center">
                     <div class="chat-face-img"></div>
                     <div class="chat-name">%닉네임%</div>
@@ -39,9 +39,10 @@
         </div>
 
         
-
-        <div class="container">
+   
+        <div class="container" style="display:none">
             
+            <!--  matching alarm -->
             <div class="chat-matching-alram">
                 <div class="matching-ment">%닉네임%님과 매치되었습니다.</div>
                 <div class="matching-time">N시간 전</div>
@@ -49,11 +50,34 @@
             </div>
 
         </div>
+
+        <!-- chat content -->
+        <div class="chatting-content flex">
+            <div class="chaating-wrapper">
+                <div class="chatting-time">
+                    5월 1일(일)
+                </div>
+                <div class="chatting-shape chatting-writter flex flex-center">
+                    <div class="chatting-time">오전 10:38</div>
+                    <div class="chatting">안녕하세요. 얼굴 보고 싶어요.</div>
+                </div>
+                <div class="chatting-shape chatting-you flex flex-center">
+                    <div class="chatting-you-img"></div>
+                    <div class="chatting">네에!</div>
+                    <div class="chatting-time">오후 1:09</div>
+                </div>
+                <div class="chatting-shape chatting-writter flex flex-center">
+                    <div class="chatting-time">지금</div>
+                    <div class="chatting">답변 없으시면...</div>
+                </div>
+            </div>
+        </div>
         <div class="chat-content flex">
-            <div class="post-img"></div>
             <div class="search">
-                <input type="text" placeholder="답글 달기">
-                <div class="input-enter">게시</div>
+                <input type="text" placeholder="메시지를 입력하세요.">
+                <div class="input-enter">
+                    <img class="message-send" src="./icons/btn_send.png">
+                </div>
             </div>  
         </div>
 
@@ -61,21 +85,7 @@
 
         <div class="bottom_navbar">
             <div class="bottom_navbar-bg">
-                <img src="./imgs/navbar1.png">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="670" height="173" viewBox="0 0 670 173">
-                    <defs>
-                      <filter id="합치기_1" x="0" y="0" width="670" height="173" filterUnits="userSpaceOnUse">
-                        <feOffset dy="-10" input="SourceAlpha"/>
-                        <feGaussianBlur stdDeviation="5" result="blur"/>
-                        <feFlood flood-opacity="0.051"/>
-                        <feComposite operator="in" in2="blur"/>
-                        <feComposite in="SourceGraphic"/>
-                      </filter>
-                    </defs>
-                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#합치기_1)">
-                      <path id="합치기_1-2" data-name="합치기 1" d="M415,143H10A10,10,0,0,1,0,133V0H183a100.007,100.007,0,0,1,89.825,56h94.351A100.007,100.007,0,0,1,457,0H640V133a10,10,0,0,1-10,10Z" transform="translate(15 25)" fill="#fff"/>
-                    </g>
-                </svg> -->
+                <img src="./imgs/bottom.png">
             </div>                  
             <div class="item-contain flex">
                 <a class="item" href="javascript:void(0)">
@@ -108,28 +118,20 @@
         </div>
     </div>
 
+
+    <!-- header edit & delete btn -->
     <ul id='dropdown1' class='dropdown-content header-dropdown'>
-        <li  class="edit-drop">
-            <a href="#!">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=" #8c8c8c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle>
-                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
-                </path>
-            </svg>
-            수정</a>
-        </li>
-        <li class="divider" tabindex="-1"></li>
-        <li class="delete-drop">
-            <a href="#!">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=" #8c8c8c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line>
-            </svg>
-            삭제</a>
-        </li>
-        <li class="divider" tabindex="-1"></li>
         <li class="report-drop">
             <a href="#!">
                 <img src="./icons/icon_chat_report.png" three>
-            신고</a>
+            신고하고 나가기</a>
         </li>       
+        <li class="divider" tabindex="-1"></li>
+        <li class="leave-drop">
+            <a href="#!">
+            <img src="./icons/icon_chat_out.png">
+            나가기</a>
+        </li>        
     </ul>
 
 

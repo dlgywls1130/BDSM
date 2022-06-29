@@ -122,6 +122,7 @@ hr{
     max-width:320px!important;
     width: 100%!important;
     padding-bottom: 90px;
+    height:85%;
 }
 
 
@@ -140,7 +141,7 @@ hr{
 }
 
 .head-fix .row{
-    padding:31px 0;
+    padding:31px 15px;
     display: flex;
     width: 100%;
     align-items: center;
@@ -189,7 +190,7 @@ hr{
 }
 
 .community .tabs .tab a{
-    color: #a5a5a5;
+    color: #a5a5a5!important;
 }
 
 .community .tabs .tab a:hover, 
@@ -204,9 +205,9 @@ hr{
     background-color:var(--color-main-bg)!important;
 }
 
-.head-fix .row a{
+/* .head-fix .row a{
     margin-left: 1rem;
-}
+} */
 
 /* checkbox */
 
@@ -1203,6 +1204,10 @@ margin-bottom: 12px;
     font-size: 17px;
 }
 
+.add-i .material-icons{
+    color: var(--color-main-bg);
+}
+
 .flex.one-img{
     display: flex;
     align-items: center;
@@ -1389,8 +1394,9 @@ height: 67.5px;
 .bottom_navbar-bg img{
     width: 100%;
     height: 100%;
-    box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.05);
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 1));
 }
+
 
 .bottom_navbar .item img{
     width:25px;
@@ -1521,7 +1527,7 @@ justify-content: center!important;
 }
 
 #primium .collection{
-    width: 280px;
+    width: 100%;
     height: 40px;
     padding: 12.5px 7px;
     border-radius: 10px;
@@ -1571,6 +1577,12 @@ justify-content: center!important;
 
 #freeCom{
     position: relative;
+    height: 100%;
+}
+
+#freeCom .post{
+    overflow: auto;
+    height: 100%;
 }
 
 .post-wrapp{
@@ -1740,6 +1752,7 @@ justify-content: center!important;
 .inner .sign-header{
     position: relative;
     width: auto!important;
+    margin:0 auto;
 }
 
 .inner.head-fix .row{
@@ -1904,13 +1917,12 @@ font-weight: 600;
 
 .chat-content{
     width: 100%;
-    height: 150px;
-    padding: 20px 0;
+    height: 160px;
+    padding: 0 0 65px;
     background-color: #6566ab;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 16px;
     position: absolute;
     bottom: 0;
 }
@@ -2105,6 +2117,10 @@ font-weight: 600;
 
 }
 
+.chat-commu{
+    position:relative;
+}
+
 .chat-commu.tabs .tab{
     line-height: 18px!important;
 }
@@ -2172,16 +2188,15 @@ font-weight: 600;
 }
 
 .chat-matching .chat-matching-alram{
-    width: 225px;
-    height: 255px;
-    padding: 25px 17px 20px;
+    height: 155px;
+    padding: 25px 17px 20px 17px;
     background-color: #e0e0ee;
-    border-radius:10px;
+    border-radius: 10px;
     display: flex;
+    flex-direction: column;
+    margin: 131.5px 25px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: auto;
 } 
 
 .matching-ment{
@@ -2203,4 +2218,243 @@ font-weight: 600;
     margin: 10px 62px 0;
     background-color: #fff;
     border-radius: 50%;
+}
+
+.chat-matching .chat-content{
+    width: 100%;
+    height: 160px;
+    padding: 0 0 65px;
+    background-color: #6566ab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.chat-matching .chat-content .search{
+    width: 100%;
+    height: 45px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 34px;
+    margin: 20px;
+    position: relative;
+}
+
+.message-send{
+    width:35px;
+    height: 35px;
+}
+
+.chat-matching .chat-content .search .input-enter{
+    position: absolute;
+    right: 4px;
+}
+
+.dropdown-content{
+    width: 147px!important;
+    left: 190px!important;
+    top: 53.5px!important;
+    height: 93px!important;
+    transform-origin: 100% 0px!important;
+    opacity: 1!important;
+    transform: scaleX(1) scaleY(1)!important;
+    padding: 15px!important;
+}
+
+.chat-matching .dropdown-content li{
+    margin-bottom: 1rem!important;
+}
+
+.leave-drop img{
+    width: 14px!important;
+    height: auto!important;
+    margin-right: 0.5rem!important;
+}
+
+.dropdown-content.header-dropdown.chat-dropdwon li>a, 
+.dropdown-content.header-dropdown.chat-dropdwon li>span{
+    line-height: 0!important;
+    padding: 0!important;
+    margin-left: 0!important;
+}
+
+.chat-dropdwon .head-fix .row a{
+    margin-left: 0;
+}
+
+.dropdown-content.chat-dropdwon li{
+    min-height: 0;
+}
+
+.chatting-color{
+    background-color:#F2F2F2;
+}
+
+.chatting-content{
+flex-direction: column;
+height:65%;
+margin:0 20px;
+position:relative;
+}
+
+.chaating-wrapper{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+}
+
+.chatting-time{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 10px;
+    line-height: 1.8;
+    color: #a5a5a5;
+}
+
+.chatting-shape .chatting-time{
+    font-size: 10px;
+    line-height: 1.8;
+    color: #a5a5a5;
+    margin-bottom: 0;
+}
+
+.chatting-shape{
+    margin-bottom: 27.5px;
+}
+
+.chatting{
+    width: auto;
+    height: 28px;
+    padding: 7px 15px;
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 13px;
+    line-height: 1.38;
+    color: #2a2a2a;
+    padding:7px 15px;
+}
+
+
+
+.chatting-you-img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 5px;
+}
+
+.chatting-writter{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chatting-writter .chatting-time{
+    margin-right: 5px;
+}
+
+.chatting-you .chatting-time{
+    margin-left: 5px;
+}
+
+
+.chat-alarm{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    padding: 2.5px 3px;
+    background-color: #d12068;
+    color: #fff;
+    border-radius: 50%;
+    top: 1px;
+    right: 71%;
+    z-index: 9;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.plus-alarm{
+    width: 24px;
+    height: 15px;
+    padding: 3px 2.5px;
+    border-radius: 15px;
+    right: 34%!important;
+}
+
+#goodpeople{
+    height: 100%;
+}
+
+.goodpeople{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.goodpeople p{
+    font-size: 13px!important;
+    line-height: 1.38!important;
+    color: #666;
+    text-align: center;
+
+}
+
+
+.me-like-people{
+    width:100%;
+    margin-top: 25px;
+
+}
+
+.me-like-people-photo{
+    width: 100%;
+    height: 125px;
+    margin: 0 0 17px;
+    border-radius: 10px;
+    background-color: #e4e4e4;
+}
+
+.me-like-name {
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: -0.72px;
+    color: var(--font-dark-gray)
+}
+
+.me-like-name span {
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--color-main-bg);
+    font-weight: 400;
+}
+
+.me-like-content{
+    margin-bottom: 2rem;
+}
+
+.me-like-content:last-child{
+    margin-bottom: 0;
+}
+
+.me-like-content div:first-child{
+    margin-right: 10px;
+}
+
+.me-like-row{
+    flex:1 1 auto;
+}
+
+.like-time {
+    font-size: 11px;
+    line-height: 1.45;
+    color: #a5a5a5;
+    text-align: right;
+    margin-top: 0.35rem;
 }
