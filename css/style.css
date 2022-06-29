@@ -593,6 +593,7 @@ font-size:12px;}
     line-height: 0.83;
     color: var(--color-main-bg);
     padding:25px 0;
+    margin-left:1rem!important;
 }
 
 
@@ -1729,7 +1730,7 @@ justify-content: center!important;
 
 .complete{
     position: absolute;
-    right:0;
+    margin-right: 1rem;
 }
 
 .inner a{
@@ -1742,7 +1743,7 @@ justify-content: center!important;
 }
 
 .inner.head-fix .row{
-    justify-content: space-around;
+  justify-content: space-between;
 }
 
 .post-write-top{
