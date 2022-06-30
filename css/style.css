@@ -115,7 +115,7 @@ h2{
 
 hr{
     margin: 10px 1px 10px 0;
-    border: solid 1px #ededed;
+    border: solid 1px #ededed!important;
 }
 
 .container{
@@ -125,6 +125,9 @@ hr{
     height:85%;
 }
 
+.card{
+    margin: 0 !important;
+}
 
 
 
@@ -141,12 +144,12 @@ hr{
 }
 
 .head-fix .row{
-    padding:31px 15px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    background-color: #fff    
+    padding:31px 15px!important;
+    display: flex!important;
+    width: 100%!important;
+    align-items: center!important;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)!important;
+    background-color: #fff!important;  
 }
 
 .head-fix .row .col{
@@ -154,21 +157,39 @@ hr{
 }
 
 .head-fix .row .col i{
-    width: 21px;
-    height: auto;
-    color: var(--font-dark-gray);
-    padding-left: 22.5px;
+    width: 21px!important;
+    height: auto!important;
+    color: var(--font-dark-gray)!important;
+    padding-left: 22.5px!important;
 }
 
+.modal{
+    background-color:transparent!important;
+    box-shadow: none!important
+}
 
+.modal .modal-content {
+    padding: 10px!important;
+}
 
+.modal-dialog{
+    margin: 0 !important;
+}
+
+.modal-body{
+    width:100%;
+}
+
+.modal-footer{
+    border-top:none!important;
+}
 
 
 /*tab*/
 .tab-fix .tab a{
     color:#fff!important;
     background-color: #d0c5c1!important;
-    width: 86px!important;
+    width: 100%!important;
     height: 35px!important;
     border-radius: 34px!important;
     text-overflow: unset!important;
@@ -203,6 +224,13 @@ hr{
 
 .community .indicator{
     background-color:var(--color-main-bg)!important;
+}
+
+.tab-fix .tabs .tab{
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 33%;
 }
 
 /* .head-fix .row a{
@@ -275,6 +303,7 @@ hr{
     left: 50%!important;
     top: 50%!important;
     transform: translate(-50%, -50%)!important;
+
 }
 
 
@@ -310,10 +339,59 @@ textarea.materialize-textarea.valid:focus,
 
 }
 
+.signup-selectbox .select-dropdown,
+.community-inner .select-dropdown{
+    width: 322px!important;
+    left: 0px!important;
+    top: 0px!important;
+    height: auto!important;
+    transform-origin: 0px 0px!important;
+    opacity: 1!important;
+    transform: scaleX(1) scaleY(1)!important;
+    padding:0!important;
+}
+
+.dropdown-content.queer-dropdown,
+.dropdown-content.post-dropdown{
+    width: auto!important;
+    left: 259.984px!important;
+    top: 31px!important;
+    height: auto!important;
+    transform-origin: 100% 0px!important;
+    opacity: 1!important;
+    transform: scaleX(1) scaleY(1)!important;
+    padding:0!important;
+}
+
+.dropdown-content.delete-dropdown{
+    width: auto!important;
+    left: 203.984px!important;
+    top: 31px!important;
+    height: auto!important;
+    transform-origin: 100% 0px!important;
+    opacity: 1!important;
+    transform: scaleX(1) scaleY(1)!important;
+    padding:0!important;
+}
+
+.chat-matching .dropdown-content.delete-dropdown li{
+    margin-bottom: 0!important;
+}
+
 .dropdown-content{
     border-radius: 10px;
 }
 
+.community-select .dropdown-content{
+width: 101.672px!important;
+left: 0px!important;
+top: 0px!important;
+height: 150px!important;
+transform-origin: 0px 0px!important;
+opacity: 1!important;
+transform: scaleX(1) scaleY(1)!important;
+padding:0!important;
+}
 
 
 
@@ -362,6 +440,7 @@ textarea{
     position: relative;
     transform: none;
     left:0;
+    top:0;
 }
 
 
@@ -731,12 +810,12 @@ stroke-dashoffset: 48;
 }
 
 .sign-up .row{
-    padding:31px 20px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    background-color: #fff    
+    padding:31px 20px!important;
+    display: flex!important;
+    width: 100%!important;
+    align-items: center!important;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)!important;
+    background-color: #fff!important;    
 }
 
 .sign-up .row .col{
@@ -744,10 +823,10 @@ stroke-dashoffset: 48;
 }
 
 .sign-up .row .col i{
-    width: 21px;
-    height: auto;
-    color: var(--font-dark-gray);
-    padding-left: 22.5px;
+    width: 21px!important;
+    height: auto!important;
+    color: var(--font-dark-gray)!important;
+    padding-left: 22.5px!important;
 }
 
 .sign-birth .container,
@@ -855,10 +934,10 @@ color: var(--color-main-bg)!important;
 }
 
 .signup-checkbox .row{
-    box-shadow: none;
-    background-color:none;
-    padding:0 0 10px;
-    margin:0;
+    box-shadow: none!important;
+    background-color:none!important;
+    padding:0 0 10px!important;
+    margin:0!important;
 }
 
 .signup-checkbox .row:last-child{
@@ -908,7 +987,7 @@ color: var(--color-main-bg)!important;
 
 
 .sign-up .slect-checkbox .row .col{
-    width:calc(100%/3);
+    width:calc(100%/3)!important;
 }
 
 
@@ -976,7 +1055,8 @@ top: -1px;
 left: 0px;
 width: 34px;
 height: 34px;
-background: var(--color-main-bg);
+background:var(--color-main-bg);
+
 z-index: 2;
 -moz-transition: all 0.25s ease-in;
 -o-transition: all 0.25s ease-in;
@@ -986,6 +1066,10 @@ transition: all 0.25s ease-in;
 -webkit-border-radius: 14px;
 border-radius: 50%;
 
+}
+
+input[type="checkbox"].toggle + label:hover{
+    background:  #a5a5a5;
 }
 
 input[type="checkbox"].toggle + label .off, input[type="checkbox"].toggle + label .on {
@@ -1012,7 +1096,8 @@ input[type="checkbox"].toggle:checked + label .on {
 }
 
 input[type="checkbox"].toggle + label .femal, input[type="checkbox"].toggle + label .on {
-    color: #fff;
+    color: var(--color-main-bg);
+    font-weight: 600;
     }
     
 input[type="checkbox"].toggle + label .femal {
@@ -1081,7 +1166,7 @@ left: 0;
 right: 0;
 bottom: 0;
 height:34px;
-width: 89.5px;
+width: 80px;
 background-color:  #e6e6e6;
 transition: 0.4s;
 pointer-events: none;
@@ -1104,7 +1189,7 @@ pointer-events: none;
     content: "여성";
     height: 19px;
     width: 33px;
-    right: 14px;
+    right: 8px;
     bottom: 5px;
     transition: 0.2s;
     color: #fff;
@@ -1143,12 +1228,12 @@ border-radius: 50%;
 
 .upload-wrapper{
 position: relative;
+width:50%;
 }
 
 .img-box .col .card{
-    margin-right: 1rem;
     margin-bottom: 1rem;
-    width:135px;
+    width:100%;
     height:125px;
     background-color: #e4e4e4;
     opacity: 0.8;
@@ -1196,6 +1281,19 @@ margin-bottom: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width:50%;
+}
+
+.img-plus{
+    margin-bottom: 1rem;
+}
+
+.img-plus:last-child{
+    margin-bottom:0;
+}
+
+.img-plus .upload-wrapper:first-child{
+    margin-right: 1rem;
 }
 
 .add-i{
@@ -1273,6 +1371,9 @@ display: flex;
 
 }
 
+.signup-input{
+    margin-top:1rem;
+}
 
 #profile .collection{
     width: 280px;
@@ -1472,6 +1573,7 @@ justify-content: center!important;
 .store_list .bean-price{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .store_list .bean-price .cofffe-number{
@@ -1482,6 +1584,7 @@ justify-content: center!important;
 .store_list .bean-price .bean-number{
     display: flex;
     align-items:center;
+    justify-content: center;
 }
 
 .store_list .bean-price .bean-number img{
@@ -1509,7 +1612,7 @@ justify-content: center!important;
 
 .won-price{
     border:1px solid var(--color-main-bg);
-    color:var(--color-main-bg);
+    color:var(--color-main-bg)!important;
     border-radius: 5px;
     font-weight: 600;
     width: 84px;
@@ -1517,6 +1620,11 @@ justify-content: center!important;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 13px!important;
+}
+
+.won-price:hover{
+    font-weight: 600;
 }
 
 
@@ -1572,6 +1680,183 @@ justify-content: center!important;
     height: auto;
 }
 
+
+.store-modal-wrap{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-store{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #e4e4e4;
+    height: 186px;
+    margin-right: 0.4rem;
+    padding:1.5rem 0;
+}
+
+.modal-store.active{
+    background-color: var(--color-main-bg);
+    color:#fff;
+}
+
+.modal-store.active h2{
+    color:#fff;
+}
+
+.modal-store.active p{
+    color: #fff !important;
+}
+
+.modal-store.active .won-price{
+    color:#fff !important;
+}
+
+.modal-store.active .bunus{
+    background-color: #ffdfde;
+}
+
+.modal-store:last-child{
+    margin-right: 0;
+}
+
+.modal-store .bean-multi img{
+    width:15px;
+    height:auto;
+}
+
+
+.modal-store .won-price{
+    border:none;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-store .won-price::before{
+    content: "";
+    display: block;
+    width: 60px;
+    border-top: 1px solid #bcbcbc;
+    margin: 10px 0px;
+}
+
+.modal-store .bean-number img{
+    margin-right: 0.5rem!important;
+}
+
+.modal-store .bean-price .cofffe-number{
+    font-size: 11px;
+}
+
+.modal-store .bunus{
+    background-color: #fff;
+    width:auto;
+}
+
+.modal-store .modal-margin{
+    margin-top:2rem;
+}
+
+.modal-title.store-title{
+    font-size: 18px!important;
+    text-align: center!important;
+    color: #2a2a2a!important;
+    font-weight: 800!important;
+}
+
+.modal-close-btn{
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    font-size: 20px;
+    background-color: transparent;
+    opacity: 1;
+}
+
+
+.btn-buy-btn{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0 0;
+    padding: 15px 10px;
+    border-radius: 10px!important; 
+    background-color: #6566ab!important;  
+    color:#fff;
+    box-shadow:none!important;
+}
+
+.btn-modal-cancle{
+    width: 100%;
+    height: 50px;
+    padding: 15px 10px;
+    border-radius: 10px!important;  
+    background-color: #fff!important;  
+    color:var(--color-main-bg)!important; 
+    border: solid 1px #e4e4e4!important; 
+    box-shadow:none!important;
+}
+
+.modal .modal-footer{
+    height:auto!important;
+    background-color:none!important;
+}
+
+.modal-store .modal-primum{
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-store .modal-primum h2{
+    font-size: 11px!important;
+    line-height: 1.27!important;
+    letter-spacing: -0.66px!important;
+    color: #2a2a2a!important;
+    font-weight: 400!important;
+}
+
+.modal-store .modal-primum img{
+    width:40px!important;
+    height:auto!important;
+    margin-right: 0;
+    margin-top: 0.5rem;
+}
+
+.primum-modal .bean-price{
+    padding:0.5rem;
+}
+
+.primum-modal .bean-price p{
+    font-size:13px;
+}
+
+.primum-modal{
+    flex: 1 1 auto;
+}
+
+.primum-modal.active{
+    background-color:var(--color-main-bg);
+}
+
+.primum-modal.active .modal-primum h2{
+    color:#fff!important;
+}
+
+.modal-content.buy-success{
+    width: 100%;
+    height: 50px;
+    padding: 18px 0 12px;
+    border-radius: 50px;
+    background-color: #ffdfde;
+    color:var(--color-main-bg);
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+}
 
 /*커뮤니티*/
 
@@ -1756,7 +2041,7 @@ justify-content: center!important;
 }
 
 .inner.head-fix .row{
-  justify-content: space-between;
+  justify-content: space-between!important;
 }
 
 .post-write-top{
@@ -2125,6 +2410,7 @@ font-weight: 600;
     line-height: 18px!important;
 }
 
+
 #chataroom{
     margin-top:20px;
 }
@@ -2161,7 +2447,7 @@ font-weight: 600;
 
 
 .chat-matching .row{
-    padding: 0 1rem;
+    padding: 0 1rem!important;
 }
 
 .chat-matching .row .chat-face-img{
@@ -2184,7 +2470,7 @@ font-weight: 600;
 }
 
 .inner.head-fix.chat-matching .row{
-    justify-content: space-between;
+    justify-content: space-between!important;
 }
 
 .chat-matching .chat-matching-alram{
@@ -2457,4 +2743,183 @@ position:relative;
     color: #a5a5a5;
     text-align: right;
     margin-top: 0.35rem;
+}
+
+
+
+/* 사진 확대 */
+.photo-all .modal-body{
+    padding: 0!important;
+}
+
+.photo-all .modal-content{
+    padding: 0!important;
+    border-radius: 0!important;
+}
+
+.modal-photo{
+    width:100%;
+}
+
+.comment-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment-img img{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+}
+
+.comment-name{
+    font-size: 18px;
+    line-height: 0.83;
+    color: #2a2a2a;
+    font-weight: 800;
+    margin-top:2rem;
+    margin-bottom: 0.5rem;
+}
+
+.comment-state{
+    font-size: 13px;
+    line-height: 1.15;
+    color: #6566ab;
+}
+
+.alarm-sub{
+    font-size: 13px!important;
+    line-height: 1.38!important;
+    color: #666;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.comment-modal li span{
+    font-size: 13px!important;
+    line-height: 1.38;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.modal-ok-btn{
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    background-color: #f5f5f5!important;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 !important;
+    border-radius: 0 0 0.5rem 0.5rem!important;
+}
+
+.modal-ok-btn img{
+    width:18px;
+    height:18px;
+
+}
+
+.ok-title{
+    font-size: 13px;
+    line-height: 1.38;
+    color: #666;
+    margin-left: 0.5rem;
+}
+
+
+.modal-footer.modal-ok-footer{
+    border-radius: 0!important;
+    background-color:transparent!important;
+    padding: 0!important;
+    height:100%!important;
+    width: 100%!important;
+}
+
+.modal-content.modal-padding{
+    padding: 0!important;
+}
+
+.modal-footer.modal-ok-footer.flex{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.modal-ok-footer.flex .modal-ok-btn{
+    width: 50%;
+}
+
+.delete-alarm{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.39;
+    color: #2a2a2a;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.delete-reason{
+    font-size: 13px;
+    line-height: 1.38;
+    color: #666;
+    text-align: center;
+}
+
+.repot-etc-btn{
+    padding:1rem;
+}
+
+.repot-etc-btn button{
+    height:50px;
+}
+
+.alarm-setting{
+    display: flex;
+    align-items: center;
+}
+
+.alarm-setting img{
+    width:17px;
+}
+
+.alarm-contain{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.account-title{
+    font-size: 15px;
+    line-height: 1.2;
+    color: #666;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.alarm-contain .next-btn{
+    width: 8px;
+    height:auto;
+}
+
+.version-content{
+    font-size: 13px;
+    line-height: 1.38;
+    color: #a5a5a5;
+}
+
+.withdrawal-content{
+    flex-direction: column;
+}
+
+.withdrawal-content .delete-reason{
+    font-size: 13px;
+    line-height: 1.38;
+    font-weight: 400;
+    color: #666;
+    margin-top:10px;
+    margin-bottom: 10px;
 }

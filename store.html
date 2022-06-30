@@ -8,6 +8,7 @@
 
     <title>Document</title>
 
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
 
@@ -18,6 +19,8 @@
     <!-- Nanumsqure font -->
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/materialize.min.js"></script>
     <script src="./js/main.js"></script>
@@ -50,9 +53,9 @@
                                 <p>원두 25개</p>
                             </div>
                         </div>
-                        <div class="won-price">
+                        <a class="won-price" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
                             &#8361; 4,900원
-                        </div>
+                        </a>
                     </div>
 
                     <hr>
@@ -128,7 +131,7 @@
                         </h2>
                         <div class="won-price">
                             <img src="./icons/icon_bean.png">
-                            <p> 원두 450개</p>
+                            <p data-bs-toggle="modal" href="#exampleModalToggle3" role="button"> 원두 450개</p>
                         </div>
                     </div>
                     <div class="store_list flex">
@@ -138,7 +141,7 @@
                         </h2>
                         <div class="won-price">
                             <img src="./icons/icon_bean.png">
-                            <p> 원두 450개</p>
+                            <p data-bs-toggle="modal" href="#exampleModalToggle3" role="button"> 원두 450개</p>
                         </div>
                     </div>
                     <div class="store_list flex">
@@ -148,7 +151,7 @@
                         </h2>
                         <div class="won-price">
                             <img src="./icons/icon_bean.png">
-                            <p> 원두 450개</p>
+                            <p data-bs-toggle="modal" href="#exampleModalToggle3" role="button"> 원두 450개</p>
                         </div>
                     </div>
                 </div>
@@ -205,13 +208,159 @@
     </section>
 
 
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
+    <!-- store modal -->
+
+        <div class="modal fade" id="exampleModalToggle" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title store-title" id="exampleModalToggleLabel">원두구매</h5>
+                </div>
+                <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="modal-body">
+                    <div class="store-modal-wrap">
+                        <div class="store_list modal-store flex">
+                            <div class="bean-multi">
+                                <img src="./icons/icon_cafe.png">
+                                <h2>X 1</h2>
+                            </div>
+                            <div class="bean-price">
+                                <div class="cofffe-number">아메리카노1잔</div>
+                                <div class="bean-number">
+                                    <img src="./icons/icon_bean.png">
+                                    <p>원두 25개</p>
+                                </div>
+                            </div>
+                            <div class="won-price">
+                                &#8361; 4,900원
+                            </div>
+                        </div>
+                        <div class="store_list modal-store flex">
+                            <div class="bean-multi">
+                                <img src="./icons/icon_cafe.png">
+                                <h2>X 5</h2>
+                            </div>
+                            <div class="bean-price">
+                                <div class="cofffe-number modal-margin">아메리카노5잔</div>
+                                <div class="bean-number">
+                                    <img src="./icons/icon_bean.png">
+                                    <p>원두 125개</p>
+                                </div>
+                                <div class="bunus">
+                                    &#43; 25개
+                                </div>
+                            </div>
+                            <div class="won-price">
+                                &#8361; 19,900원
+                            </div>
+                        </div>
+                        <div class="store_list modal-store flex active">
+                            <div class="bean-multi">
+                                <img src="./icons/icon_cafe_on.png">
+                                <h2>X 10</h2>
+                            </div>
+                            <div class="bean-price">
+                                <div class="cofffe-number modal-margin">아메리카노10잔</div>
+                                <div class="bean-number">
+                                    <img src="./icons/icon_bean_on.png">
+                                    <p>원두 80개</p>
+                                </div>
+                                <div class="bunus">
+                                    &#43; 125개
+                                </div>
+                            </div>
+                            <div class="won-price">
+                                &#8361; 39,900원
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button class="btn btn-buy-btn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">구매하기</button>
+                <button class="btn btn-modal-cancle" data-bs-dismiss="modal" aria-label="Close">취소하기</button>
+                </div>
+            </div>
+            </div>
         </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        <div class="modal fade" id="exampleModalToggle2" aria-labelledby="exampleModalToggleLabel2" tabindex="-1" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content buy-success">
+                <div class="modal-body">
+                구매가 정상적으로 처리되었습니다.
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <!-- 프리미엄 modal -->
+
+    <div class="modal fade" id="exampleModalToggle3" aria-labelledby="exampleModalToggleLabel3" tabindex="-1" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title store-title" id="exampleModalToggleLabel">프리미엄 프로젝트</h5>
+            </div>
+            <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-body">
+                <div class="store-modal-wrap">
+                    <div class="store_list modal-store primum-modal flex">
+                        <div class="bean-multi modal-primum">
+                            <h2>프리미엄<br> 프로젝트</h2>
+                            <img src="./icons/icon_cafe_premium_30.png">
+                        </div>
+                        <div class="bean-price">
+                            <div class="bean-number">
+                                <img src="./icons/icon_bean.png">
+                                <p>150개</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store_list modal-store primum-modal flex">
+                        <div class="bean-multi modal-primum">
+                            <h2>프리미엄<br> 프로젝트</h2>
+                            <img src="./icons/icon_cafe_premium_30.png">
+                        </div>
+                        <div class="bean-price">
+                            <div class="bean-number">
+                                <img src="./icons/icon_bean.png">
+                                <p>150개</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store_list modal-store primum-modal flex active">
+                        <div class="bean-multi modal-primum">
+                            <h2>프리미엄<br>프로젝트</h2>
+                            <img src="./icons/icon_cafe_premium_30.png">
+                        </div>
+                        <div class="bean-price">
+                            <div class="bean-number">
+                                <img src="./icons/icon_bean_on.png">
+                                <p>150개</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button class="btn btn-buy-btn" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">구매하기</button>
+            <button class="btn btn-modal-cancle" data-bs-dismiss="modal" aria-label="Close">취소하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle4" aria-labelledby="exampleModalToggleLabel4" tabindex="-1" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content buy-success">
+                <div class="modal-body">
+                구매 처리가 실패되었습니다.
+                </div>
+            </div>
         </div>
     </div>
 

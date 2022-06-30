@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephonne=no">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/materialize.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Nanumsqure font -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</head>
+<body>
+    <section class="community head-fix">
+        <div class="row">
+            <a href="account.html"><i class="material-icons">arrow_back</i></a>
+            <div class="col sign-header">계정설정</div>
+        </div>
+
+        
+
+        
+        <div class="container">
+            <div class="alarm-contain">
+                <div class="alarm-setting">
+                    <img src="./icons/icon_logout.png">
+                    <div class="account-title">로그아웃 </div>
+                </div>
+                <a data-bs-toggle="modal" href="#exampleModalToggle1"><img class="next-btn" src="./icons/btn_go.png"></a>
+            </div>
+
+            <hr>
+
+            <div class="alarm-contain">
+                <div class="alarm-setting">
+                    <img src="./icons/icon_pop_withdraw.png">
+                    <div class="account-title">회원탈퇴 </div>
+                </div>
+                <a data-bs-toggle="modal" href="#exampleModalToggle2"><img class="next-btn" src="./icons/btn_go.png"></a>
+            </div>
+
+        </div>
+
+        <!-- <div class="bottom_bgc"></div> -->
+
+        <div class="bottom_navbar">
+            <div class="bottom_navbar-bg">
+                <img src="./imgs/bottom.png">
+            </div>                  
+            <div class="item-contain flex">
+                <a class="item" href="javascript:void(0)">
+                    <img src="./icons/dock_icon_home.png">
+                </a>
+                <a class="item padding-right" href="javascript:void(0)">
+                    <img src="./icons/dock_icon_chat.png">
+                </a>
+                <a class="item padding-left" href="javascript:void(0)">
+                    <img src="./icons/dock_icon_swipe.png">
+                </a>
+                <a class="item" href="javascript:void(0)">
+                    <img src="./icons/dock_icon_profile.png">
+                </a>
+            </div>
+            <a class="middle-btn btn-floating">
+                <img src="./icons/dock_icon_cafe.png">
+            </a>
+        </div>
+    </section>
+
+
+    <!-- 로그아웃 modal -->
+    <div class="modal fade" id="exampleModalToggle1"  tabindex="-1" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content comment-modal modal-padding">
+                <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="modal-body">
+                    <div class="delete-alarm">
+                        <h2>정말로 로그아웃
+                            <br>하시겠습니까?</h2>
+                    </div>
+                </div>
+                <div class="modal-footer modal-ok-footer flex">
+                    <div class="modal-ok-btn flex" data-bs-toggle="modal">
+                        <img src="./icons/icon_pop_cancle.png">
+                        <div class="ok-title">취소하기</div>
+                    </div>
+                    <div class="modal-ok-btn flex" data-bs-target="#exampleModalToggle7" data-bs-toggle="modal">
+                        <img src="./icons/icon_pop_report.png">
+                        <div class="ok-title">로그아웃</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 회원탈퇴 -->
+    <div class="modal fade" id="exampleModalToggle2"  tabindex="-1" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content comment-modal modal-padding">
+                <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="modal-body">
+                    <div class="delete-alarm  withdrawal-content">
+                        <h2>정말로 탈퇴하시겠습니까?</h2>
+                        <div class="delete-reason">
+                            회원탈퇴를 원하시면 아래에
+                            <br> '탈퇴합니다'라고 입력해 주세요.
+                        </div>
+                        <input type="text" placeholder="탈퇴합니다.">
+                    </div>
+                </div>
+                <div class="modal-footer modal-ok-footer flex">
+                    <div class="modal-ok-btn flex" data-bs-toggle="modal">
+                        <img src="./icons/icon_pop_cancle.png">
+                        <div class="ok-title">취소하기</div>
+                    </div>
+                    <div class="modal-ok-btn flex" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">
+                        <img src="./icons/icon_pop_withdraw.png">
+                        <div class="ok-title">탈퇴</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalToggle3"  tabindex="-1" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content comment-modal modal-padding">
+                <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="modal-body">
+                    <div class="delete-alarm  withdrawal-content">
+                        <h2>모든 데이터가 삭제 됩니다.
+                            <br>정말로 탈퇴하시겠습니까?</h2>
+                        
+                    </div>
+                </div>
+                <div class="modal-footer modal-ok-footer flex">
+                    <div class="modal-ok-btn flex" data-bs-toggle="modal">
+                        <img src="./icons/icon_pop_cancle.png">
+                        <div class="ok-title">취소하기</div>
+                    </div>
+                    <div class="modal-ok-btn flex" data-bs-target="#exampleModalToggle7" data-bs-toggle="modal">
+                        <img src="./icons/icon_pop_withdraw.png">
+                        <div class="ok-title">탈퇴</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -8,6 +8,7 @@
 
     <title>Document</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
 
@@ -17,7 +18,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Nanumsqure font -->
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
-
+    
+    <!-- select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/materialize.min.js"></script>
     <script src="./js/main.js"></script>
@@ -48,8 +51,8 @@
                     <input type="text" placeholder="검색어를 입력해 주세요">
                     <div class="material-icons">search</div>
                 </div>
-                <div class="select-wrapper select_wrap flex">
-                    <div class="input-field col s12">
+                <div class="select-wrapper select_wrap  flex">
+                    <div class="input-field col s4 community-select">
                         <select>
                             <option value="all" selected>전체성향</option>
                             <option value="top">탑</option>
@@ -57,7 +60,7 @@
                         </select>
                         <label></label>
                     </div>
-                    <div class="input-field col s12">
+                    <div class="input-field col s4 community-select">
                         <select>
                             <option value="last">최신글</option>
                             <option value="read">조회순</option>
@@ -65,7 +68,7 @@
                         </select>
                         <label></label>
                     </div>
-                    <div class="input-field col s12">
+                    <div class="input-field col s4 community-select">
                         <select>
                             <option value="0">전체성별</option>
                             <option value="man">남성</option>
@@ -616,20 +619,6 @@
         <div class="bottom_navbar">
             <div class="bottom_navbar-bg">
                 <img src="./imgs/bottom.png">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="670" height="173" viewBox="0 0 670 173">
-                    <defs>
-                      <filter id="합치기_1" x="0" y="0" width="670" height="173" filterUnits="userSpaceOnUse">
-                        <feOffset dy="-10" input="SourceAlpha"/>
-                        <feGaussianBlur stdDeviation="5" result="blur"/>
-                        <feFlood flood-opacity="0.051"/>
-                        <feComposite operator="in" in2="blur"/>
-                        <feComposite in="SourceGraphic"/>
-                      </filter>
-                    </defs>
-                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#합치기_1)">
-                      <path id="합치기_1-2" data-name="합치기 1" d="M415,143H10A10,10,0,0,1,0,133V0H183a100.007,100.007,0,0,1,89.825,56h94.351A100.007,100.007,0,0,1,457,0H640V133a10,10,0,0,1-10,10Z" transform="translate(15 25)" fill="#fff"/>
-                    </g>
-                  </svg> -->
             </div>                  
             <div class="item-contain flex">
                 <a class="item" href="javascript:void(0)">
@@ -668,6 +657,12 @@
             $('.modal').modal();
         });
 
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+
         </script>
+
+
 </body>
 </html>

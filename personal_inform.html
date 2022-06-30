@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephonne=no">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/pulldelete.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Nanumsqure font -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/pulldelete.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</head>
+<body>
+    <section class="community head-fix">
+        <div class="row">
+            <a href="javascript:void(0)"><i class="material-icons">arrow_back</i></a>
+            <div class="col sign-header">개인정보 처리방침</div>
+        </div>
+
+        
+
+        
+        <div class="container">
+            
+
+            
+        </div>
+
+        <!-- <div class="bottom_bgc"></div> -->
+
+        <div class="bottom_navbar">
+            <div class="bottom_navbar-bg">
+                <img src="./imgs/bottom.png">
+            </div>                  
+            <div class="item-contain flex">
+                <a class="item" href="javascript:void(0)">
+                    <img src="./icons/dock_icon_home.png">
+                </a>
+                <a class="item padding-right" href="javascript:void(0)">
+                    <img src="./icons/dock_icon_chat.png">
+                </a>
+                <a class="item padding-left" href="javascript:void(0)">
+                    <img src="./icons/dock_icon_swipe.png">
+                </a>
+                <a class="item" href="javascript:void(0)">
+                    <img src="./icons/dock_icon_profile.png">
+                </a>
+            </div>
+            <a class="middle-btn btn-floating">
+                <img src="./icons/dock_icon_cafe.png">
+            </a>
+        </div>
+    </section>
+
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+
+        <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+
+        </script>
+
+        <script>
+            $(function(){
+                $('.pull_delete').pulldelete(function($dom){
+                console.log('click delete');
+                $dom.remove();
+                });
+            })
+        </script>
+</body>
+</html>

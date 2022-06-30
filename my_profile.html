@@ -8,6 +8,7 @@
 
     <title>Document</title>
 
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
 
@@ -18,6 +19,7 @@
     <!-- Nanumsqure font -->
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/materialize.min.js"></script>
     <script src="./js/main.js"></script>
@@ -38,7 +40,7 @@
             </ul>
 
             <div id="profile">
-                <img src="./imgs/profile.jpg"  data-target="modal1" class="profile-img modal-trigger" alt="my_img">
+                <img src="./imgs/profile.jpg"  class="profile-img" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="my_img">
                 <div class="collection">
                     <h2>언웰컴드 23살</h2>
                     <div class="bean-wrapper flex">
@@ -163,13 +165,30 @@
                 </div>
     
                 <div class="img-box">
-                    <div class="col flex">
+                    <div class="col flex img-plus">
                         <div class="upload-wrapper">
                             <div class="card img-upload"></div>
                             <a class="btn-floating halfway-fab waves-effect waves-light">
                                 <i class="material-icons">close</i>
                             </a>
                         </div>
+                        <div class="upload-wrapper add-img ">
+                            <div class="card img-upload"></div>
+                            <a class="halfway-fab waves-light add-i">
+                                <i class="material-icons">add</i>
+                            </a>
+    
+                        </div>
+                    </div>
+    
+                    <div class="col flex img-plus">
+                        <div class="upload-wrapper add-img">
+                            <div class="card img-upload"></div>
+                            <a class="halfway-fab waves-light add-i">
+                                <i class="material-icons">add</i>
+                            </a>
+    
+                        </div>
                         <div class="upload-wrapper add-img">
                             <div class="card img-upload"></div>
                             <a class="halfway-fab waves-light add-i">
@@ -179,24 +198,7 @@
                         </div>
                     </div>
     
-                    <div class="col flex">
-                        <div class="upload-wrapper add-img">
-                            <div class="card img-upload"></div>
-                            <a class="halfway-fab waves-light add-i">
-                                <i class="material-icons">add</i>
-                            </a>
-    
-                        </div>
-                        <div class="upload-wrapper add-img">
-                            <div class="card img-upload"></div>
-                            <a class="halfway-fab waves-light add-i">
-                                <i class="material-icons">add</i>
-                            </a>
-    
-                        </div>
-                    </div>
-    
-                    <div class="col flex">
+                    <div class="col flex img-plus">
                         <div class="upload-wrapper add-img">
                             <div class="card img-upload"></div>
                             <a class="halfway-fab waves-light add-i">
@@ -897,22 +899,21 @@
     </section>
 
 
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    <div class="modal fade photo-all" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img class="modal-photo" src="./imgs/profile.jpg">
+                </div>
+            </div>
         </div>
     </div>
 
 
-        <script>
-        $(document).ready(function(){
-            $('.modal').modal();
-        });
-
-        </script>
+     
 </body>
 </html>

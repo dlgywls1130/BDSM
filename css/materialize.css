@@ -6226,8 +6226,8 @@ input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid #6566AB;
-  -webkit-box-shadow: 0 1px 0 0 #26a69a;
-          box-shadow: 0 1px 0 0 #26a69a;
+  -webkit-box-shadow: 0 1px 0 0 #6566AB;
+          box-shadow: 0 1px 0 0 #6566AB;
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -6243,7 +6243,7 @@ input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
 input[type=number]:not(.browser-default):focus:not([readonly]) + label,
 input[type=search]:not(.browser-default):focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #26a69a;
+  color: #6566AB;
 }
 
 input:not([type]):focus.valid ~ label,
@@ -6259,7 +6259,7 @@ input[type=tel]:not(.browser-default):focus.valid ~ label,
 input[type=number]:not(.browser-default):focus.valid ~ label,
 input[type=search]:not(.browser-default):focus.valid ~ label,
 textarea.materialize-textarea:focus.valid ~ label {
-  color: #4CAF50;
+  color: #6566AB;
 }
 
 input:not([type]):focus.invalid ~ label,
@@ -6275,7 +6275,7 @@ input[type=tel]:not(.browser-default):focus.invalid ~ label,
 input[type=number]:not(.browser-default):focus.invalid ~ label,
 input[type=search]:not(.browser-default):focus.invalid ~ label,
 textarea.materialize-textarea:focus.invalid ~ label {
-  color: #F44336;
+  color: #6566AB;
 }
 
 input:not([type]).validate + label,
@@ -6321,8 +6321,8 @@ input.valid[type=search]:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
   border-bottom: 1px solid #6566AB;
-  -webkit-box-shadow: 0 1px 0 0 #4CAF50;
-          box-shadow: 0 1px 0 0 #4CAF50;
+  -webkit-box-shadow: 0 1px 0 0 #6566AB;
+          box-shadow: 0 1px 0 0 #6566AB;
 }
 
 input.invalid:not([type]), input.invalid:not([type]):focus,
@@ -6352,8 +6352,8 @@ textarea.materialize-textarea.invalid,
 textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown,
 .select-wrapper.invalid > input.select-dropdown:focus {
   border-bottom: 1px solid #6566AB;
-  -webkit-box-shadow: 0 1px 0 0 #F44336;
-          box-shadow: 0 1px 0 0 #F44336;
+  -webkit-box-shadow: 0 1px 0 0 #6566AB;
+          box-shadow: 0 1px 0 0 #6566AB;
 }
 
 input:not([type]).valid ~ .helper-text[data-success],
@@ -6444,7 +6444,7 @@ input[type=search]:not(.browser-default):focus.valid ~ .helper-text:after,
 textarea.materialize-textarea.valid ~ .helper-text:after,
 textarea.materialize-textarea:focus.valid ~ .helper-text:after, .select-wrapper.valid ~ .helper-text:after {
   content: attr(data-success);
-  color: #4CAF50;
+  color: #6566AB;
 }
 
 input:not([type]).invalid ~ .helper-text:after,
@@ -6474,7 +6474,7 @@ input[type=search]:not(.browser-default):focus.invalid ~ .helper-text:after,
 textarea.materialize-textarea.invalid ~ .helper-text:after,
 textarea.materialize-textarea:focus.invalid ~ .helper-text:after, .select-wrapper.invalid ~ .helper-text:after {
   content: attr(data-error);
-  color: #F44336;
+  color: #6566AB;
 }
 
 input:not([type]) + label:after,
@@ -7060,41 +7060,39 @@ textarea.materialize-textarea {
 }
 
 .switch label input[type=checkbox]:checked + .lever {
-  background-color: #84c7c1;
+  background-color: #6566ab;
 }
 
 .switch label input[type=checkbox]:checked + .lever:before, .switch label input[type=checkbox]:checked + .lever:after {
-  left: 18px;
+  left: 29px;
 }
 
 .switch label input[type=checkbox]:checked + .lever:after {
-  background-color: #6566AB;
+  background-color: #fff;
 }
 
 .switch label .lever {
-  content: "";
-  display: inline-block;
-  position: relative;
-  width: 36px;
-  height: 14px;
-  background-color: rgba(0, 0, 0, 0.38);
-  border-radius: 15px;
-  margin-right: 10px;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  vertical-align: middle;
-  margin: 0 16px;
+content: "";
+display: inline-block;
+position: relative;
+width: 60px;
+height: 32px;
+background-color: rgba(0, 0, 0, 0.38);
+border-radius: 15px;
+-webkit-transition: background 0.3s ease;
+transition: background 0.3s ease;
+vertical-align: middle;
 }
 
 .switch label .lever:before, .switch label .lever:after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  left: 0;
-  top: -3px;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    left: -1px;
+    top: 0px;
   -webkit-transition: left 0.3s ease, background .3s ease, -webkit-box-shadow 0.1s ease, -webkit-transform .1s ease;
   transition: left 0.3s ease, background .3s ease, -webkit-box-shadow 0.1s ease, -webkit-transform .1s ease;
   transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease, transform .1s ease;

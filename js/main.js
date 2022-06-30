@@ -50,3 +50,4 @@ for (var i = 0; i < agreeBtn.length; i++) {
 }
 
 init();
+
