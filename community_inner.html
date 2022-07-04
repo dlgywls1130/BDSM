@@ -26,7 +26,7 @@
 <body>
     <section class="inner head-fix">
         <div class="row">
-            <a href="21_community.html"><i class="material-icons">arrow_back</i></a>
+            <a href="community.html"><i class="material-icons">arrow_back</i></a>
             <div class="col sign-header">카페테리아(커뮤니티)</div>
             <a class="complete" href="javascript:void(0)">완료</a>
         </div>
@@ -34,7 +34,17 @@
         
 
         <div class="container community-inner">
-          
+            
+            <div class="select-wrapper select_wrap">
+                <div class="input-field col s12">
+                    <select>
+                        <option value="0" selected>자유게시판</option>
+                        <option value="1" >Female ONLY</option>
+                        <option value="2" >익명 고민게시판</option>
+                    </select>
+                    <label></label>
+                </div>
+            </div>
 
             <div class="signup-input">
                 <h2>제목 <span></span></h2>
@@ -111,5 +121,22 @@
     </section>
 
 
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+
+        <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+
+        </script>
 </body>
 </html>
