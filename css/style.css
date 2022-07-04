@@ -3469,37 +3469,37 @@ line-height: 1.38;
 }
 
 .direct-input{
-  padding: 15px 15px 0;
+padding: 15px 15px 0;
 }
 
 .attend-complete{
-  width: 100%;
-  display: flex;
+width: 100%;
+display: flex;
 }
 
 .attend-complete .bean-btn{
-  width: 50%;
-  height: 50px;
-  margin: 0 5px 0 0;
-  padding: 16px 25.5px;
-  border-radius: 10px;
-  box-shadow: none;
-    border: none;
+width: 50%;
+height: 50px;
+margin: 0 5px 0 0;
+padding: 16px 25.5px;
+border-radius: 10px;
+box-shadow: none;
+border: none;
 }
 
 .attend-complete .bean-btn.am{
-  background-color: #ffdfde;
-  color:var(--color-main-bg);
+background-color: #ffdfde;
+color:var(--color-main-bg);
 }
 
 .attend-complete .bean-btn.pm{
-  background-color: var(--color-main-bg);
-  color:#fff;
+background-color: var(--color-main-bg);
+color:#fff;
 }
 
 .attend-complete .bean-btn.bean-complete{
-  background-color: #e4e4e4;
-  color:#fff;
+background-color: #e4e4e4;
+color:#fff;
 }
 
 .attend-modal{
@@ -3513,42 +3513,50 @@ margin:30px 0;
 
 
 .modalPhoto {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 1);
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 1);
+opacity: 0;
+visibility: hidden;
+transform: scale(1.1);
+transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
+
 .modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 1rem 1.5rem;
-  width: 24rem;
-  border-radius: 0.5rem;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white;
+width: 100%;
+max-width: 280px;
+max-height: 280px;
+height:100%;
+margin:0 auto;
+border-radius: 0.5rem;
 }
+
 .close-btn {
-  float: right;
-  width: 1.5rem;
-  line-height: 1.5rem;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  background-color: lightgray;
+float: right;
+width: 1.5rem;
+line-height: 1.5rem;
+text-align: center;
+cursor: pointer;
+border-radius: 0.25rem;
+background-color: lightgray;
+position: absolute;
 }
+
 .close-btn:hover {
-  background-color: darkgray;
+background-color: darkgray;
 }
+
 .show-modal {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1.0);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+opacity: 1;
+visibility: visible;
+transform: scale(1.0);
+transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
