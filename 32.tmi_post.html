@@ -8,64 +8,87 @@
 
     <title>Document</title>
 
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/materialize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Nanumsqure font -->
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/main.js"></script>
 
 </head>
 <body>
     <section class="inner head-fix">
         <div class="row">
-            <a href="queer_post.html"><i class="material-icons">arrow_back</i></a>
-            <div class="col sign-header">구인게시판 <span>for 퀴어 </span></div>
+            <a href="58_queer_post.html"><i class="material-icons">arrow_back</i></a>
+            <div class="col sign-header">카페테리아(커뮤니티) </span></div>
             <a class="complete" href="javascript:void(0)">완료</a>
         </div>
 
-        
+
 
         <div class="container community-inner">
-            
-            <div class="select-wrapper select_wrap">
-                <div class="input-field col s12">
-                    <select>
-                        <option value="0" selected>소분류선택</option>
-                        <option value="1">펨투펨&레즈비언</option>
-                        <option value="2">멜투멜 & 게이</option>
-                        <option value="3">CD Crossdresser</option>
-                        <option value="4">트랜스젠더</option>
-                        <option value="5">etc</option>
-                    </select>
-                    <label></label>
-                </div>
-            </div>
 
             <div class="signup-input">
-                <h2>제목 <span></span></h2>
+                <h2>제목</h2>
                 <div class="input-field col s6">
                     <input data-length="255" placeholder="제목을 입력해 주세요." id="title" type="text" class="validate">
                     <label for="title"></label>
                 </div>
             </div>
-            <div class="signup-input">
-                <h2>내용</h2>
-                <textarea data-length="4000" placeholder="타인을 비방하거나, 욕설 혹은 개인을 특정하여 언급하는 행위는 삼가해 주세요. 기준을 위반한 게시물을 작성할 경우 제재를 받을 수 있습니다."></textarea>
+
+            <div class="input_select">
+                <label for="content-select" class="flex flex-between flex-center">
+                    <h2>나만의 질문을 선택해 주세요 
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </span>
+                    </h2>
+
+                    <img src="./icons/icon_delete.png">
+
+                </label>
+                <input type="text" id="content-select" placeholder="나만의 답변을 입력해 주세요.">
+
+            </div>
+
+            <div class="input_select direct-input">
+                <label for="content-select" class="flex flex-between flex-center">
+                    <h2>직접입력 
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg>
+                        </span>
+                    </h2>
+
+                    <img src="./icons/icon_delete.png">
+
+                </label>
+                <input type="text" id="content-select" placeholder="나만의 질문을 선택해 주세요">
+                <input type="text" id="content-select" placeholder="나만의 질문을 선택해 주세요">
+
+            </div>
+
+
+            <div class="collection photo-click">
+                <img src="./icons/icon_add.png">
             </div>
 
             <div class="collection photo-click">
                 <img src="./icons/icon_photo.png">
             </div>
 
-            
+
 
         </div>
         <div class="photo-select-wrapp">
@@ -124,22 +147,5 @@
     </section>
 
 
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-        </div>
-    </div>
-
-
-        <script>
-        $(document).ready(function(){
-            $('.modal').modal();
-        });
-
-        </script>
 </body>
-</html>
+</html> 

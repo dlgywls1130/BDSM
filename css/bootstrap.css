@@ -340,6 +340,7 @@ label {
 button {
   border-radius: 0;
 }
+<<<<<<< HEAD
 
 button:focus:not(:focus-visible) {
   outline: 0;
@@ -356,6 +357,24 @@ textarea {
   line-height: inherit;
 }
 
+=======
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+>>>>>>> parent of 713ff85 (popup사진)
 button,
 select {
   text-transform: none;

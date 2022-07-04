@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephonne=no">
-
     <title>Document</title>
-
+    
     <link rel="stylesheet" href="./css/materialize.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -15,22 +14,21 @@
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Nanumsqure font -->
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/main.js"></script>
 
 </head>
+
 <body>
     <section class="inner head-fix chat-matching chatting-color">
         <div class="row flex-between">
             <div class="flex flex-center ">
-                <a href="chat.html"><i class="material-icons">arrow_back</i></a>
+                <a href="42_chat.html"><i class="material-icons">arrow_back</i></a>
                 <div class="chat-your flex flex-center">
                     <div class="chat-face-img"></div>
                     <div class="chat-name">%닉네임%</div>
@@ -40,9 +38,8 @@
                 <div class="material-icons">more_vert</div>
             </a>
         </div>
-
         
-   
+
         <div class="container" style="display:none">
             
             <!--  matching alarm -->
@@ -51,9 +48,7 @@
                 <div class="matching-time">N시간 전</div>
                 <div class="matching-photo"></div>
             </div>
-
         </div>
-
         <!-- chat content -->
         <div class="chatting-content flex">
             <div class="chaating-wrapper">
@@ -83,9 +78,7 @@
                 </div>
             </div>  
         </div>
-
         <!-- <div class="bottom_bgc"></div> -->
-
         <div class="bottom_navbar">
             <div class="bottom_navbar-bg">
                 <img src="./imgs/bottom.png">
@@ -109,10 +102,6 @@
             </a>
         </div>
     </section>
-
-
-
-
     <!-- header edit & delete btn -->
     <ul id='dropdown1' class='dropdown-content header-dropdown delete-dropdown'>
         <li class="report-drop">
@@ -127,8 +116,6 @@
             나가기</a>
         </li>        
     </ul>
-
-
     <div class="modal fade" id="exampleModalToggle10" aria-labelledby="exampleModalToggleLabe11" tabindex="-1" aria-hidden="true" style="display: none;">
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content comment-modal modal-padding">
@@ -191,7 +178,6 @@
                         </label>
                     </li>
                 </ul>
-
             </div>
             <div class="modal-footer modal-ok-footer">
                 <div class="modal-ok-btn flex" data-bs-target="#exampleModalToggle11" data-bs-toggle="modal">
@@ -202,7 +188,6 @@
         </div>
         </div>
     </div>
-
     <div class="modal fade" id="exampleModalToggle11"  tabindex="-1" aria-hidden="true" style="display: none;">
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content comment-modal modal-padding">
@@ -231,7 +216,6 @@
         </div>
         </div>
     </div>
-
     <!-- 기타 modal -->
     <div class="modal fade" id="exampleModalToggle12"  tabindex="-1" aria-hidden="true" style="display: none;">
         <div class="modal-dialog modal-dialog-centered">
@@ -260,8 +244,6 @@
         </div>
         </div>
     </div>
-
-
         <script>
             $('.dropdown-trigger').dropdown();
         </script>

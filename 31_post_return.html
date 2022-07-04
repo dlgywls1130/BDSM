@@ -8,27 +8,28 @@
 
     <title>Document</title>
 
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/materialize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Nanumsqure font -->
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/main.js"></script>
 
 </head>
 <body>
-    <section class="inner head-fix ">
+    <section class="inner head-fix">
         <div class="row">
-            <a href="queer_post.html"><i class="material-icons">arrow_back</i></a>
-            <div class="col sign-header">구인게시판<span>for 퀴어</span></div>
-            <a class='dropdown-trigger ' href='#' data-target='dropdown1'>
+            <a href="community.html"><i class="material-icons">arrow_back</i></a>
+            <div class="col sign-header">카페테리아(커뮤니티)</div>
+            <a class='dropdown-trigger' href='#' data-target='dropdown1'>
                 <div class="material-icons">more_vert</div>
             </a>
         </div>
@@ -50,7 +51,7 @@
                 <div class="post-write-middle flex flex-between flex-center">
                     <div class="title-post flex flex-center">	
                         <div class="material-icons">chevron_right</div>
-                        <h2>펨루펨&레즈비언 </h2>
+                        <h2>자유게시판</h2>
                     </div>
                     <div class="post-time">방금</div>
                 </div>
@@ -63,7 +64,7 @@
                 
                 </div>
 
-                <div class="post-main">
+                <div class="post-main" style="display:none">
                     <div class="img-post">
                         <img src="./imgs/profile2.jpg">
                         <div class="expansion-btn">
@@ -113,8 +114,7 @@
                         </div>
                         
                     </div>
-
-                    <div class="post-write-top flex recahat" style="display:none">
+                    <div class="post-write-top flex">
                         <div class="post-img"></div>
                         <div class="chat-post">
                             <div class="post-writer flex">
@@ -122,6 +122,42 @@
                             </div>
                             <div class="post-time flex">
                                 <p>1시간전</p>
+                                <p>답글달기</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="post-write-top flex recahat">
+                        <div class="post-img"></div>
+                        <div class="chat-post">
+                            <div class="post-writer flex">
+                                닉네임닉네임<span>안녕하세요</span>
+                            </div>
+                            <div class="post-time flex">
+                                <p>1시간전</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="post-write-top flex delete">
+                        <div class="post-img"></div>
+                        <div class="chat-post">
+                            관리자에 의해 삭제 된 댓글입니다. 
+                        </div>
+                        
+                    </div>
+
+                    <div class="post-write-top flex">
+                        <div class="post-img"></div>
+                        <div class="chat-post">
+                            <div class="post-writer flex">
+                                닉네임닉네임<span>안녕하세요</span>
+                            </div>
+                            <div class="post-time flex">
+                                <p>1시간전</p>
+                                <p>답글달기</p>
                             </div>
                         </div>
                         
@@ -172,17 +208,8 @@
     </section>
 
 
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-        </div>
-    </div>
 
-    <ul id='dropdown1' class="dropdown-content header-dropdown queer-dropdown">
+    <ul id='dropdown1' class='dropdown-content header-dropdown post-dropdown'>
         <li  class="edit-drop">
             <a href="#!">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke=" #8c8c8c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle>
@@ -207,29 +234,6 @@
     </ul>
 
 
-<<<<<<< HEAD:queer_post_inner.html
-<<<<<<< HEAD:62_queer_post_inner.html
-
-    
-    <div class="modalPhoto">
-      <div class="modal-content">
-          <span class="close-btn">×</span>
-            <div class="allphoto">
-                <img src="./imgs/profile2.jpg">
-            </div>
-      </div>
-    </div>
-
-=======
->>>>>>> parent of 713ff85 (popup사진):62_queer_post_inner.html
-        
-=======
-        <script>
-        $(document).ready(function(){
-            $('.modal').modal();
-        });
-        </script>
->>>>>>> parent of e7f0888 (css 정리 및 tmi게시판 제작중):queer_post_inner.html
         <script>
             $('.dropdown-trigger').dropdown();
         </script>

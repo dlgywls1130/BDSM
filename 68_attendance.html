@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephonne=no">
-
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/materialize.css">
@@ -20,10 +19,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/materialize.min.js"></script>
-    <!-- <script src="./js/calendar.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/main.js"></script>
-
 </head>
 <body>
     <section class="community head-fix">
@@ -31,9 +28,7 @@
             <a href="main.html"><i class="material-icons">arrow_back</i></a>
             <div class="col sign-header">출석체크</div>
         </div>
-
         
-
         
         <div class="container">
             <div class="attendance_pop">
@@ -41,7 +36,6 @@
                 <h2>매일 오전과 오후에</h2>
                 <span>원두를 각각 1개씩 드립니다.</span>
             </div>
-
             <div class="calendar">
                 <div class="sec_cal">
                     <div class="cal_nav">
@@ -103,8 +97,8 @@
                 </div>
             </div>
 
-            <div class="attend-btn">출석체크</div>
-            <ul class="require-attention">
+            <div data-bs-toggle="modal" href="#exampleModalToggle20" class="attend-btn" >출석체크</div>
+            <ul class="require-attention"  style="display:none">
                 <li>주의사항</li>
                 <li>- 출석체크는 하루에 2번, 오전과 오후로 나눠 1번씩 참여할 수 있습니다.</li>
                 <li>- 오전 출석 체크는 00시 00분부터 11시 59분까지 참여가 가능합니다.</li>
@@ -112,10 +106,17 @@
                 <li>- 출석 체크를 할 때마다 원두를 1개씩, 하루에 최대 2개까지 지급해 드립니다.</li>
             </ul>
 
+            <div class="attend-complete" style="display:none">
+                <button class="bean-btn am"  data-bs-toggle="modal" href="#exampleModalToggle21">오전 원두받기</button>
+                <button class="bean-btn pm"  data-bs-toggle="modal" href="#exampleModalToggle21">오후 원두받기</button>
+            </div>
+
+            <!-- before/완료 버튼은 befoe/bean-complete class로 제어 -->
+            <!-- 출석버튼/주의사항은 display none상태 -->
+
         </div>
 
         <div class="bottom_bgc"></div>
-
         <div class="bottom_navbar">
             <div class="bottom_navbar-bg">
                 <img src="./imgs/bottom.png">
@@ -140,6 +141,52 @@
         </div>
     </section>
 
+<!-- 출석체크 modal -->
+
+<div class="modal fade" id="exampleModalToggle20" aria-labelledby="exampleModalToggleLabe22" tabindex="-1" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content comment-modal modal-padding">
+            <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-body">
+                <p class="attend-modal">출석 체크를 하였습니다.</p>
+
+            </div>
+            <div class="modal-footer modal-ok-footer">
+                <div class="modal-ok-btn flex" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="./icons/icon_pop_ok.png">
+                    <div class="ok-title">확인</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 원두 modal -->
+<div class="modal fade" id="exampleModalToggle21" aria-labelledby="exampleModalToggleLabe22" tabindex="-1" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content comment-modal modal-padding">
+            <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-body">
+                <p class="attend-modal">원두를 받았습니다.</p>
+
+            </div>
+            <div class="modal-footer modal-ok-footer">
+                <div class="modal-ok-btn flex" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="./icons/icon_pop_ok.png">
+                    <div class="ok-title">확인</div>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+
 
 </body>
-</html>
+</html> 
