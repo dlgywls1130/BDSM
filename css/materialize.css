@@ -5996,10 +5996,17 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 .chips.focus {
+<<<<<<< HEAD
     border-bottom: 1px solid #26a69a;
     -webkit-box-shadow: 0 1px 0 0 #26a69a;
             box-shadow: 0 1px 0 0 #26a69a;
   }
+=======
+  border-bottom: 1px solid #26a69a;
+  -webkit-box-shadow: 0 1px 0 0 #26a69a;
+          box-shadow: 0 1px 0 0 #26a69a;
+}
+>>>>>>> parent of 713ff85 (popup사진)
 
 .chips:hover {
   cursor: text;
@@ -6142,6 +6149,7 @@ textarea.materialize-textarea {
   height: 3rem;
   width: 100%;
   font-size: 16px;
+  margin: 0 0 8px 0;
   padding: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -6224,7 +6232,10 @@ input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
+<<<<<<< HEAD
   border-bottom: 1px solid #6566AB;
+=======
+>>>>>>> parent of 713ff85 (popup사진)
   -webkit-box-shadow: 0 1px 0 0 #6566AB;
           box-shadow: 0 1px 0 0 #6566AB;
 }
@@ -6293,7 +6304,10 @@ textarea.materialize-textarea.validate + label {
   width: 100%;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 713ff85 (popup사진)
 /* Validation Sass Placeholders */
 input.valid:not([type]), input.valid:not([type]):focus,
 input.valid[type=text]:not(.browser-default),
@@ -6320,7 +6334,10 @@ input.valid[type=search]:not(.browser-default),
 input.valid[type=search]:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+<<<<<<< HEAD
   border-bottom: 1px solid #6566AB;
+=======
+>>>>>>> parent of 713ff85 (popup사진)
   -webkit-box-shadow: 0 1px 0 0 #6566AB;
           box-shadow: 0 1px 0 0 #6566AB;
 }
@@ -6351,7 +6368,10 @@ input.invalid[type=search]:not(.browser-default):focus,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown,
 .select-wrapper.invalid > input.select-dropdown:focus {
+<<<<<<< HEAD
   border-bottom: 1px solid #6566AB;
+=======
+>>>>>>> parent of 713ff85 (popup사진)
   -webkit-box-shadow: 0 1px 0 0 #6566AB;
           box-shadow: 0 1px 0 0 #6566AB;
 }

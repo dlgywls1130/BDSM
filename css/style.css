@@ -3401,7 +3401,7 @@ line-height: 1.38;
 
 .input_select label{
     border-bottom: 1px solid #e4e4e4;
-    padding: 0 0 15px;
+    padding: 10px 0;
 }
 
 .input_select h2{
@@ -3409,7 +3409,6 @@ line-height: 1.38;
     line-height: 1.23;
     color: #2a2a2a;
     font-weight: 800;
-    display: flex;
 }
 
 .input_select h2 span svg{
@@ -3433,6 +3432,7 @@ line-height: 1.38;
 
 .input_select.direct-input input[type=text]:not(.browser-default):last-child{
     border-bottom: 0!important;
+<<<<<<< HEAD
 }
 
 .direct-input{
@@ -3527,3 +3527,6 @@ visibility: visible;
 transform: scale(1.0);
 transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
+=======
+}
+>>>>>>> parent of 713ff85 (popup사진)

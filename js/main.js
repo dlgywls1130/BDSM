@@ -7,24 +7,6 @@ if (window.navigator.userAgent.indexOf("Edge") !== -1 || navigator.appVersion.in
 
 
 //modal
-var modal = document.querySelector(".modalPhoto");
-var trigger = document.querySelector(".modal-trigger");
-var closeButton = document.querySelector(".close-btn");
-
-function toggleModal() {
-    modal.classList.toggle("show-modal");
-}
-
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
-}
-
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
 
 
 // selectbox
