@@ -1,3 +1,6 @@
+
+
+
 if (window.navigator.userAgent.indexOf("Edge") !== -1 || navigator.appVersion.indexOf("MSIE 10") !== -1 || window.navigator.userAgent.indexOf("Trident/7.0") > 0) { 
     document.documentElement.className += ' crappy-browser';
 } else {
@@ -56,3 +59,14 @@ for (var i = 0; i < agreeBtn.length; i++) {
 }
 }
 init();
+
+
+//swiper
+var swiper = new Swiper(".mySwiper", {
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   type: "fraction",
+  // }
+});
+
+

@@ -15,13 +15,19 @@
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Nanumsqure font -->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
     <section class="myProfile head-fix tab-fix">
         <div class="row">
-            <a href="main.html"><i class="material-icons">arrow_back</i></a>
+            <a href="2_main.html"><i class="material-icons">arrow_back</i></a>
             <div class="col sign-header">내 프로필</div>
         </div>
 
@@ -100,7 +106,7 @@
                     <div class="profile_content flex community-img">
                         <div class="title">커뮤니티용 프로필사진</div>
                         <div class="description">
-                            <img src="./imgs/profile.jpg" alt="my">
+                            <img class="modal-trigger" src="./imgs/profile.jpg" alt="my">
                         </div>
                     </div>
 
@@ -892,21 +898,20 @@
     </section>
 
 
-    <div class="modal fade photo-all" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img class="modal-photo" src="./imgs/profile.jpg">
-                </div>
+    <!-- 사진전체보기 -->
+    <div class="modalPhoto">
+      <span class="close-btn">×</span>
+      <div class="modal-wrapper swiper mySwiper">
+            <div class="allphoto swiper-wrapper">
+                <img class="swiper-slide" src="./imgs/profile2.jpg">
+                <img class="swiper-slide" src="./imgs/profile1.jpg">
             </div>
-        </div>
+            <!-- <div class="swiper-pagination"></div> -->
+      </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    
     <script src="./js/main.js"></script>
 
 
