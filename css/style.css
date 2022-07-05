@@ -3067,3 +3067,17 @@ transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
   padding: 1rem;
   border-top: 1px solid #ededed;
 }
+
+
+
+.modal-footer.modal-bean-alarm .ok-title{
+  color:#fff;
+}
+
+.modal-bean-alarm{
+  background-color: var(--color-main-bg);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
