@@ -1694,8 +1694,8 @@ width: 32px;
 height: 27.1px;
 }
 .complete{
-position: absolute;
-margin-right: 1rem;
+color: #a5a5a5!important;
+font-weight: 800;
 }
 .inner a{
 position: relative;
@@ -1799,6 +1799,17 @@ margin-top:5px;
 .chat-post .post-time p:first-child{
 margin-right: 15px;
 }
+
+.chat-wrapp{
+  border-bottom:1px solid #f5f4f4;
+
+}
+
+.chat-main{
+  padding: 10px 0;
+}
+
+
 .post-good-btn{
 width: 105.5px;
 height: 34px;
@@ -2516,6 +2527,21 @@ line-height: 1.15;
 word-break: keep-all;
 text-align: center;
 }
+
+.swipe-delete{
+  background-color: var(--color-main-bg);
+  width: 91.5px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swipe-delete img{
+  width: 20px;
+  height: auto;
+}
+
 /* swipe 매칭 화면*/
 .matching{
 background-color: rgba(0, 0, 0, 0.8);
